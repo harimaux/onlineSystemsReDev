@@ -12,6 +12,12 @@
   transform: translate(-5px, 12px);
 }
 
+.formInfoIcon {
+  font-size: 30px;
+  transform: translate(5px, 5px);
+  cursor: pointer;
+}
+
 /* --------------- COMMON ---------------- */
 body {
   font-family: "Poppins", sans-serif;
@@ -246,9 +252,23 @@ form .formDisabilityBox {
 
 .formInfoBox {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: rgb(238, 43, 43);
-  transform: translate(0px, -20px);
+  font-size: 15px;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: rgb(252, 252, 195);
+  position: absolute;
+  width: 300px;
+  transform: translate(420px, -20px);
+  display: none;
+}
+
+.formInfoBoxCloseBtn {
+  margin-bottom: 1rem;
+  text-align: end;
+}
+.formInfoBoxCloseBtn span {
+  font-size: 25px;
 }
 
 /* ---------------- LANDING PAGE CSS ---------------- */

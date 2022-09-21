@@ -11,6 +11,8 @@ $fontDark: rgb(65, 65, 65);
 $fontDarker: rgb(68, 68, 68);
 $backGroundDark: rgb(0, 0, 0);
 $backGroundLight: rgb(221, 221, 221);
+$backGroundLighter: rgb(255, 255, 255);
+$backGroundYellow: rgb(252, 252, 195);
 
 $warningRed: rgb(238, 43, 43);
 $warningOrange: rgb(226, 105, 5);
@@ -33,6 +35,12 @@ $doneJourney:rgba(4, 52, 53, 0.2);
   font-size: 36px;
   line-height: 0px;
   transform: translate(-5px, 12px);
+}
+
+.formInfoIcon {
+  font-size: 30px;
+  transform: translate(5px, 5px);
+  cursor: pointer;
 }
 
 /* --------------- COMMON ---------------- */
@@ -303,9 +311,24 @@ form {
 
 .formInfoBox {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: $warningRed;
-  transform: translate(0px, -20px);
+  font-size: 15px;
+  border: 1px solid $fontDark;
+  border-radius: 5px;
+  padding: .5rem;
+  background-color: $backGroundYellow;
+  position: absolute;
+  width: 300px;
+  transform: translate(420px, -20px);
+  display: none;
+}
+
+.formInfoBoxCloseBtn {
+  margin-bottom: 1rem;
+  text-align: end;
+
+  span {
+    font-size: 25px;
+  }
 }
 
 /* ---------------- LANDING PAGE CSS ---------------- */
