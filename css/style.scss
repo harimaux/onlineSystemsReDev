@@ -1,0 +1,772 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------- SASS VARIABLES --------------- */
+
+$fontLight: rgb(224, 224, 224);
+$fontDark: rgb(65, 65, 65);
+$fontDarker: rgb(68, 68, 68);
+$backGroundDark: rgb(0, 0, 0);
+$backGroundLight: rgb(221, 221, 221);
+
+$warningRed: rgb(238, 43, 43);
+$warningOrange: rgb(226, 105, 5);
+$warningGreen: rgb(76, 168, 33);
+$uglyGreen: rgba(4, 52, 53, 0.4);
+
+$NCLred: #DB2F2F;
+$NCLred80: rgb(218, 47, 47, 0.8);
+$NCLlucas: rgba(72, 255, 0, 0.8);
+
+// Landing page colours
+$todoJourney: rgba(4, 52, 53, 0.4);
+$activeJourney: #DB2F2F;
+$doneJourney:rgba(4, 52, 53, 0.2);
+
+//GOOGLE ICONS
+
+.material-icons,
+.material-symbols-outlined {
+  font-size: 36px;
+  line-height: 0px;
+  transform: translate(-5px, 12px);
+}
+
+/* --------------- COMMON ---------------- */
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.logoMobile {
+  display: none;
+}
+
+.backToTopBtn {
+
+  position: fixed;
+  right: 2rem;
+  bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.226);
+  padding: .3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+
+  img {
+    filter: invert(33%) sepia(57%) saturate(6837%) hue-rotate(349deg) brightness(93%) contrast(83%);
+    /* rotate: 180deg; */
+    transform: rotate(180deg);
+    width: 40px;
+  }
+}
+
+/* --------------- BUTTON --------------- */
+
+button {
+  padding: 0.7rem;
+  cursor: pointer;
+  background-color: rgb(65, 102, 172);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  width: 140px;
+  margin-bottom: 2rem;
+}
+
+/* --------------- FOOTER --------------- */
+
+footer {
+  background-color: $backGroundDark;
+
+  p {
+    color: $fontLight;
+    font-size: 10px;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .navFooter {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+  }
+
+  .footerLogo {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    padding: 2rem;
+  }
+
+  .footerSlogan {
+    color: $fontDark;
+    width: 400px;
+    margin-left: 3rem;
+  }
+}
+
+/* --------------- NAVIGATION ---------------- */
+
+.logo {
+  padding: 1rem;
+
+  img {
+    width: 300px;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  ul {
+    display: flex;
+    margin-right: 100px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $fontDark;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.mobileBtnContainer {
+  display: none;
+}
+
+/* --------------- FORM PAGE --------------- */
+
+/* --------------- DROPDOWN MENU --------------- */
+
+.formHeading {
+  width: 1250px;
+  margin: auto;
+  color: $fontDark;
+
+  .closeOpenAll {
+    display: flex;
+
+    p {
+      margin-right: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdownMenu {
+  width: 1250px;
+  margin: auto;
+  margin-bottom: 400px;
+}
+
+.dropdownMenuItemTitle {
+  background-color: $NCLred;
+  border: solid 1px $fontDark;
+  color: $fontLight;
+  font-weight: bold;
+  padding: 1rem;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.dropdownMenuItemTitle:hover {
+  background: $fontDark;
+  color: $fontLight;
+}
+
+.dropdownMenuItemData {
+  margin: 0;
+  overflow: hidden;
+  transition: height .6s ease-out;
+}
+
+.dropdownMenuItemData.hide {
+  height: 0;
+}
+
+.dropdownMenuItemData.show {
+  height: var(--openHeight);
+}
+
+.titleSpan2mark {
+  color: $warningGreen;
+}
+
+.titleSpanDiv {
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+
+  img {
+    width: 20px;
+    margin-right: 1rem;
+    transform: translate(0px, 5px);
+    transition: .3s ease-in-out;
+  }
+}
+
+.dropdownMenuProgressBar {
+  width: 200px;
+  background-color: $backGroundLight;
+  border-radius: 5px;
+  border: 1px solid $fontDark;
+  text-align: center;
+  color: $fontDarker;
+}
+
+.dropdownMenuProgressBarColor {
+  height: 100%;
+  /* background-image: linear-gradient( rgb(252, 252, 252), rgb(27, 194, 21)); */
+  /* background-image: linear-gradient(rgb(252, 252, 252), rgb(59, 168, 55)); */
+  background-image: linear-gradient(rgb(252, 252, 252), green);
+  border-radius: 3.5px;
+  border-right: 1px solid $fontDark;
+}
+
+
+
+.flipArrow {
+  img {
+    rotate: -180deg;
+    transform: translate(0px, 0px);
+  }
+}
+
+/* --------------- FORMS --------------- */
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+
+  background-color: $fontLight;
+  border-left: 1px $fontDark solid;
+  border-right: 1px $fontDark solid;
+  border-bottom: 1px $fontDark solid;
+
+  img {
+    width: 20px;
+    opacity: .7;
+    transform: translate(0, -20px);
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: .5rem;
+    margin-bottom: 1.5rem;
+    width: 400px;
+    outline-color: #35791a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  label {
+    color: rgb(82, 82, 82);
+    font-size: 15px;
+  }
+
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+
+  .formDisabilityBox {
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+  }
+}
+
+.formInfoBox {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: $warningRed;
+  transform: translate(0px, -20px);
+}
+
+/* ---------------- LANDING PAGE CSS ---------------- */
+
+.Top-section {
+  // border: orangered 2px solid;
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.statusbox {
+  // border: orangered 2px solid;
+  margin-right: 10px;
+  margin-top: 1%;
+  margin-bottom: 2rem;
+  width: 40%;
+  text-align: center;
+  padding: 1%;
+  background-color: $activeJourney;
+  border-radius: 10px;
+  // SHADOWS
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  // box-shadow: 0px 0px 16px 10px rgba(0, 0, 0, 0.3);
+
+  h1 {
+    font-size: 45px;
+    padding: 2%;
+    // margin: auto;
+    color: white;
+  }
+
+  h2 {
+    font-size: 35px;
+    padding: 2%;
+  }
+}
+
+.notifications {
+  // border: orangered 2px solid;
+  width: 40%;
+  margin-top: 1%;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1%;
+  background-color: $activeJourney;
+  border-radius: 10px;
+
+  // SHADOWS
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+  h1 {
+    font-size: 45px;
+    padding: 3%;
+    color: white;
+  }
+
+  h2 {
+    font-size: 85px;
+    padding: 3%;
+    display: inline-block;
+    margin-inline: 5%;
+  }
+
+  h3 {
+    display: inline-block;
+    font-size: 35px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+#Progress {
+  width: 50%;
+  background-color: rgb(95, 95, 95);
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#Bar {
+  width: 50%;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  border-radius: 5px;
+}
+
+.journeyTitle {
+  text-align: center;
+  width: 80%;
+  background-color: rgb(0, 0, 0, 0.7);
+  margin: 0 auto;
+  // border: 1px solid red;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  padding: 2%;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  // border: 1px solid red;
+  max-width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item,
+.header-item1,
+.header-item2 {
+  color: black;
+  text-align: center;
+  // font-size: 2rem;
+}
+
+#header-container,#header-container-done {
+  width: 80%;
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1%;
+  background-color: $todoJourney;
+  border-radius: 10px;
+  // border: orangered 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+  // SHADOWS
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#header-container-done{
+  opacity: 30%;
+//   display: none;
+// visibility: hidden;
+}
+
+#header-container-active {
+  width: 80%;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1%;
+  background-color: $activeJourney;
+  border-radius: 10px;
+  border: black 3px solid;
+  margin-left: auto;
+  margin-right: auto;
+  // SHADOWS
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.header-item {
+  border-radius: 50%;
+  flex: 1;
+  // background-color: blueviolet;
+  align-self: center;
+  font-size: 4rem;
+}
+
+.header-item1 {
+  align-self: center;
+  flex: 2;
+  font-size: 3rem;
+  // background-color: crimson;
+}
+
+.header-item2 {
+  flex: 3;
+  font-size: 1.5rem;
+  padding: 8px 35px;
+  align-self: center;
+  // background-color: darkcyan;
+}
+
+/* ---------------- MEDIA ---------------- */
+
+@media screen and (max-width: 1288px) {
+
+  /* ---------------- FORM PAGE ---------------- */
+
+  .dropdownMenu {
+    width: 95%;
+  }
+
+  .formHeading {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+
+  nav {
+    ul {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1030px) {
+
+  /* ---------------- FORM PAGE ---------------- */
+
+  .logoMobile {
+    display: unset;
+
+    img {
+      width: 200px;
+      margin: 1rem;
+    }
+  }
+
+  .formHeading {
+    font-size: 12px;
+  }
+
+  .mobileBtnContainer {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1;
+
+    div {
+      width: 35px;
+      height: 3px;
+      background-color: $fontDark;
+      margin: 5px;
+      border-radius: 2px;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  .navHeader {
+    display: block;
+    width: 100%;
+    background-color: $backGroundDark;
+    transition: .3s ease-in-out;
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+
+    ul {
+      display: unset;
+    }
+
+    li {
+      margin: 1rem;
+      margin-left: 2rem;
+    }
+
+    a {
+      color: $fontDark;
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+
+    img {
+      -webkit-filter: invert(1);
+      filter: invert(1);
+    }
+  }
+
+  .mobileBtnLine1X {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .mobileBtnLine2X {
+    opacity: 0;
+  }
+
+  .mobileBtnLine3X {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .navToggle {
+    transform: translateY(0);
+  }
+
+  footer {
+
+    .navFooter {
+
+      margin-right: 0rem;
+      justify-content: flex-start;
+
+      ul {
+        display: block;
+        margin-top: 2rem;
+      }
+    }
+
+    .footerLogo {
+      padding: 1rem;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    .footerSlogan {
+      width: 80%;
+      margin-left: 1rem;
+    }
+  }
+
+  /* ---------------- LANDING PAGE ---------------- */
+
+  // .Top-section {
+  //   flex-direction: column;
+  // }
+}
+
+@media screen and (max-width: 940px) {
+
+  /* ---------------- FORM PAGE ---------------- */
+
+  .backGroundMain {
+    display: none;
+  }
+
+  .logo {
+    padding: .5rem;
+
+    img {
+      width: 250px;
+    }
+  }
+
+  .dropdownMenu {
+    margin-top: 0px;
+  }
+
+  /* ---------------- LANDING PAGE ---------------- */
+
+  .Top-section {
+    flex-direction: column;
+  }
+
+  .statusbox {
+    width: 90%;
+    font-size: inherit;
+  }
+
+  .notifications {
+    width: 90%;
+    font-size: inherit;
+  }
+
+  #header-container-done {
+    width: 90%;
+  }
+
+  #header-container-active {
+    width: 90%;
+  }
+
+  .journeyTitle {
+    width: 90%;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  /* ---------------- FORM PAGE ---------------- */
+
+  .logo {
+    img {
+      width: 200px;
+    }
+  }
+
+  form {
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    div {
+      width: 90%;
+    }
+
+    input,
+    textarea,
+    select {
+      padding: .4rem;
+      margin-bottom: 1.5rem;
+      width: auto;
+    }
+  }
+
+  .titleSpanDiv {
+    display: unset;
+  }
+
+  .dropdownMenuProgressBar {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  /* ---------------- LANDING PAGE ---------------- */
+
+  .Top-section {
+    flex-direction: column;
+  }
+
+  .statusbox {
+    width: 90%;
+    font-size: inherit;
+  }
+
+  .notifications {
+    width: 90%;
+    font-size: inherit;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .header-item,
+  .header-item1,
+  .header-item2 {
+    font-size: inherit;
+  }
+
+  #header-container {
+    width: 90%;
+  }
+
+  #header-container-active {
+    width: 90%;
+  }
+
+  .journeyTitle {
+    width: 90%;
+    font-size: inherit;
+  }
+}

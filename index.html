@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Services Redevelopment</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <!-- <div class="backGroundMain"><img src="images/autumn-leaf.png" alt=""></div> -->
+  <div class="logoMobile"><img src="images/logo.png" alt=""></div>
+
+  <nav class="navHeader">
+
+    <div class="logo"><img src="images/logo.png" alt=""></div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="landing-page.html">Hub</a></li>
+      <li><a href="#">Student</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Campus</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Sign Out</a></li>
+    </ul>
+  </nav>
+
+  <div class="mobileBtnContainer">
+    <div id="mobileBtnLine1"></div>
+    <div id="mobileBtnLine2"></div>
+    <div id="mobileBtnLine3"></div>
+  </div>
+
+  <div class="formHeading">
+    <h1>Your Online Aplication Form</h1><br>
+    <!--     <p>If you wish to change your name please contact New College Lanarkshire on 0300 5558080 and the receptionist will transfer you to the MIS team who will assist with your request. Alternatively, email the College at info@nclan.ac.uk</p> -->
+
+    <div class="closeOpenAll">
+      <p id="closeAllBtn">&#10507; Close All</p>
+      <p id="openAllBtn">&#10506; Open All</p>
+    </div>
+  </div>
+
+
+  <dl class="dropdownMenu">
+    <div>
+      <dt class="dropdownMenuItemTitle">
+        <div class="titleSpanDiv">
+          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">account_circle</span>Your details</p>
+
+          <div class="dropdownMenuProgressBar">
+            <div class="dropdownMenuProgressBarColor" style="width: 80%">
+              80%
+            </div>
+          </div>
+
+
+        </div>
+      </dt>
+      <dd class="dropdownMenuItemData hide">
+        <ul class="dropdownSubmenu">
+          <form action="">
+
+            <div>
+              <label for="formSurename">Surname&#42</label>
+              <input type="text" name="formSurename">
+            </div>
+
+            <div>
+              <label for="formForename">Forename&#42</label>
+              <input type="text" name="formForename">
+            </div>
+
+            <div>
+              <label for="formDate">Date of birth&#42</label>
+              <input class="formDate" type="date" name="formDate">
+            </div>
+
+            <div>
+              <label for="formHomePostCode">Home post code&#42</label>
+              <input type="text" name="formHomePostCode">
+            </div>
+
+            <div><button id="btnFormFindPostCode">Find My Address</button></div>
+
+            <div>
+              <label for="formHomeAddress">Home address&#42</label>
+              <textarea name="formHomeAddress" cols="30" rows="10" placeholder="Please enter your address on multiple lines, e.g.:
+
+              12 Main Street
+              Glenboig
+              North Lanarkshire"></textarea>
+              <p class="formInfoBox">Please only enter your address manually if the postcode lookup cannot find your
+                address.</p>
+            </div>
+
+            <div>
+              <label for="formHomeTelephone">Home telephone</label>
+              <input type="text" name="formHomeTelephone">
+            </div>
+
+            <div>
+              <label for="formMobileTelephone">Mobile telephone</label>
+              <input type="text" name="formMobileTelephone">
+            </div>
+
+            <div>
+              <label for="formEmail">Email</label>
+              <input type="text" name="formEmail">
+            </div>
+
+            <div><button class="btnFormSave">Save</button></div>
+
+          </form>
+        </ul>
+      </dd>
+    </div>
+
+    <div>
+      <dt class="dropdownMenuItemTitle">
+        <div class="titleSpanDiv">
+          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
+              contact_emergency
+            </span>Emergency contact</p>
+
+          <div class="dropdownMenuProgressBar">
+            <div class="dropdownMenuProgressBarColor" style="width: 100%">
+              Completed
+            </div>
+          </div>
+
+      </dt>
+      <dd class="dropdownMenuItemData hide">
+        <ul class="dropdownSubmenu">
+
+          <form action="">
+            <div>
+              <label for="formEmergencyContactName">Full name of emergency contact</label>
+              <input type="text" name="formEmergencyContactName">
+            </div>
+
+            <div>
+              <label for="formEmergencyContactRelation">Relationship to you</label>
+              <select name="formEmergencyContactRelation">
+                <option selected="selected" value=""></option>
+                <option value="">Mother</option>
+                <option value="">Father</option>
+                <option value="">Guardian</option>
+                <option value="">Spouse/Partner</option>
+                <option value="">Child</option>
+                <option value="">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formEmergencyContactPhone">Emergency contact phone number</label>
+              <input type="text" name="formEmergencyContactPhone">
+            </div>
+
+            <div><button class="btnFormSave">Save</button></div>
+
+          </form>
+
+        </ul>
+      </dd>
+    </div>
+
+    <div>
+      <dt class="dropdownMenuItemTitle">
+        <div class="titleSpanDiv">
+          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
+              school
+            </span>Education, Assistance and Care</p>
+
+          <div class="dropdownMenuProgressBar">
+            <div class="dropdownMenuProgressBarColor" style="width: 20%">
+              20%
+            </div>
+          </div>
+        </div>
+      </dt>
+      <dd class="dropdownMenuItemData hide">
+        <ul class="dropdownSubmenu">
+
+          <form action="">
+
+            <div>
+              <label for="formNationality">Nationality</label>
+              <select name="formNationality">
+                <option selected="selected" value=""></option>
+                <option value="XH">XH-Scotland</option>
+                <option value="XF">XF-England</option>
+                <option value="XI">XI-Wales/Cymru</option>
+                <option value="IE">IE-Ireland</option>
+                <option value="XG">XG-Northern Ireland</option>
+                <option value="PL">PL-Poland</option>
+                <option value="AF">AF-Afghanistan</option>
+                <option value="AX">AX-Aland Islands</option>
+                <option value="AL">AL-Albania </option>
+                <option value="DZ">DZ-Algeria</option>
+                <option value="AS">AS-American Samoa</option>
+                <option value="AD">AD-Andorra</option>
+                <option value="AO">AO-Angola</option>
+                <option value="AI">AI-Anguilla </option>
+                <option value="AG">AG-Antigua and Barbuda</option>
+                <option value="AR">AR-Argentina</option>
+                <option value="AM">AM-Armenia </option>
+                <option value="AW">AW-Aruba</option>
+                <option value="AU">AU-Australia</option>
+                <option value="AT">AT-Austria</option>
+                <option value="AZ">AZ-Azerbaijan</option>
+                <option value="BS">BS-Bahamas, The</option>
+                <option value="BH">BH-Bahrain</option>
+                <option value="BD">BD-Bangladesh</option>
+                <option value="BB">BB-Barbados</option>
+                <option value="BY">BY-Belarus</option>
+                <option value="BE">BE-Belgium</option>
+                <option value="BZ">BZ-Belize</option>
+                <option value="BJ">BJ-Benin</option>
+                <option value="BM">BM-Bermuda</option>
+                <option value="BT">BT-Bhutan</option>
+                <option value="BO">BO-Bolivia</option>
+                <option value="BQ">BQ-Bonaire, Sint Eustatius and Saba</option>
+                <option value="BA">BA-Bosnia and Herzegovina</option>
+                <option value="BW">BW-Botswana</option>
+                <option value="BR">BR-Brazil</option>
+                <option value="IO">IO-British Indian Ocean Territory</option>
+                <option value="BN">BN-Brunei Darussalam</option>
+                <option value="BG">BG-Bulgaria</option>
+                <option value="BF">BF-Burkina Faso</option>
+                <option value="BI">BI-Burundi</option>
+                <option value="CV">CV-Cabo Verde (Cape Verde)</option>
+                <option value="KH">KH-Cambodia</option>
+                <option value="CM">CM-Cameroon</option>
+                <option value="CA">CA-Canada</option>
+                <option value="KY">KY-Cayman Islands</option>
+                <option value="CF">CF-Central African Republic</option>
+                <option value="TD">TD-Chad</option>
+                <option value="CL">CL-Chile</option>
+                <option value="CN">CN-China</option>
+                <option value="CX">CX-Christmas Island</option>
+                <option value="CC">CC-Cocos (Keeling) Islands</option>
+                <option value="CO">CO-Colombia</option>
+                <option value="KM">KM-Comoros</option>
+                <option value="CG">CG-Congo</option>
+                <option value="CD">CD-Congo (Democratic Republic)</option>
+                <option value="CK">CK-Cook Islands</option>
+                <option value="CR">CR-Costa Rica</option>
+                <option value="CI">CI-Côte d'Ivoire (Ivory Coast)</option>
+                <option value="HR">HR-Croatia</option>
+                <option value="CU">CU-Cuba</option>
+                <option value="CW">CW-Curaçao</option>
+                <option value="CY">CY-Cyprus</option>
+                <option value="XA">XA-Cyprus (European Union)</option>
+                <option value="XB">XB-Cyprus (Non-European Union)</option>
+                <option value="CZ">CZ-Czechia</option>
+                <option value="DK">DK-Denmark</option>
+                <option value="DJ">DJ-Djibouti</option>
+                <option value="DM">DM-Dominica</option>
+                <option value="DO">DO-Dominican Republic</option>
+                <option value="EC">EC-Ecuador</option>
+                <option value="EG">EG-Egypt</option>
+                <option value="SV">SV-El Salvador</option>
+                <option value="GQ">GQ-Equatorial Guinea</option>
+                <option value="ER">ER-Eritrea</option>
+                <option value="EE">EE-Estonia</option>
+                <option value="ET">ET-Ethiopia</option>
+                <option value="FK">FK-Falkland Islands [Malvinas]</option>
+                <option value="FO">FO-Faroe Islands</option>
+                <option value="FJ">FJ-Fiji</option>
+                <option value="FI">FI-Finland</option>
+                <option value="FR">FR-France</option>
+                <option value="GF">GF-French Guiana</option>
+                <option value="PF">PF-French Polynesia</option>
+                <option value="GA">GA-Gabon</option>
+                <option value="GM">GM-Gambia, The</option>
+                <option value="GE">GE-Georgia</option>
+                <option value="DE">DE-Germany</option>
+                <option value="GH">GH-Ghana</option>
+                <option value="GI">GI-Gibraltar</option>
+                <option value="GR">GR-Greece</option>
+                <option value="GL">GL-Greenland</option>
+                <option value="GD">GD-Grenada</option>
+                <option value="GP">GP-Guadeloupe</option>
+                <option value="GU">GU-Guam</option>
+                <option value="GT">GT-Guatemala</option>
+                <option value="GG">GG-Guernsey</option>
+                <option value="GN">GN-Guinea</option>
+                <option value="GW">GW-Guinea-Bissau</option>
+                <option value="GY">GY-Guyana</option>
+                <option value="HT">HT-Haiti</option>
+                <option value="VA">VA-Holy See (Vatican City State)</option>
+                <option value="HN">HN-Honduras</option>
+                <option value="HK">HK-Hong Kong</option>
+                <option value="HU">HU-Hungary</option>
+                <option value="IS">IS-Iceland</option>
+                <option value="IN">IN-India</option>
+                <option value="ID">ID-Indonesia</option>
+                <option value="IR">IR-Iran</option>
+                <option value="IQ">IQ-Iraq</option>
+                <option value="IM">IM-Isle of Man</option>
+                <option value="IL">IL-Israel</option>
+                <option value="IT">IT-Italy</option>
+                <option value="JM">JM-Jamaica</option>
+                <option value="JP">JP-Japan</option>
+                <option value="JE">JE-Jersey</option>
+                <option value="JO">JO-Jordan</option>
+                <option value="KZ">KZ-Kazakhstan</option>
+                <option value="KE">KE-Kenya</option>
+                <option value="KI">KI-Kiribati</option>
+                <option value="KP">KP-Korea (the Democratic People's Republic of) - North Korea</option>
+                <option value="KR">KR-Korea (the Republic of) - South Korea</option>
+                <option value="QO">QO-Kosova</option>
+                <option value="KW">KW-Kuwait</option>
+                <option value="KG">KG-Kyrgyzstan</option>
+                <option value="LA">LA-Lao People's Democratic Republic (Laos)</option>
+                <option value="LV">LV-Latvia</option>
+                <option value="LB">LB-Lebanon</option>
+                <option value="LS">LS-Lesotho</option>
+                <option value="LR">LR-Liberia</option>
+                <option value="LY">LY-Libya</option>
+                <option value="LI">LI-Liechtenstein</option>
+                <option value="LT">LT-Lithuania</option>
+                <option value="LU">LU-Luxembourg</option>
+                <option value="MO">MO-Macao</option>
+                <option value="MK">MK-Macedonia</option>
+                <option value="MG">MG-Madagascar</option>
+                <option value="MW">MW-Malawi</option>
+                <option value="MY">MY-Malaysia</option>
+                <option value="MV">MV-Maldives</option>
+                <option value="ML">ML-Mali</option>
+                <option value="MT">MT-Malta</option>
+                <option value="MH">MH-Marshall Islands</option>
+                <option value="MQ">MQ-Martinique</option>
+                <option value="MR">MR-Mauritania</option>
+                <option value="MU">MU-Mauritius</option>
+                <option value="YT">YT-Mayotte</option>
+                <option value="MX">MX-Mexico</option>
+                <option value="FM">FM-Micronesia</option>
+                <option value="MD">MD-Moldova</option>
+                <option value="MC">MC-Monaco</option>
+                <option value="MN">MN-Mongolia</option>
+                <option value="ME">ME-Montenegro</option>
+                <option value="MS">MS-Montserrat</option>
+                <option value="MA">MA-Morocco</option>
+                <option value="MZ">MZ-Mozambique</option>
+                <option value="MM">MM-Myanmar (Burma)</option>
+                <option value="NA">NA-Namibia</option>
+                <option value="NR">NR-Nauru</option>
+                <option value="NP">NP-Nepal</option>
+                <option value="NL">NL-Netherlands </option>
+                <option value="NC">NC-New Caledonia</option>
+                <option value="NZ">NZ-New Zealand</option>
+                <option value="NI">NI-Nicaragua</option>
+                <option value="NE">NE-Niger</option>
+                <option value="NG">NG-Nigeria</option>
+                <option value="NU">NU-NIUE</option>
+                <option value="NF">NF-Norfolk Island</option>
+                <option value="MP">MP-Northern Mariana Islands</option>
+                <option value="NO">NO-Norway</option>
+                <option value="OM">OM-Oman</option>
+                <option value="PK">PK-Pakistan</option>
+                <option value="PW">PW-Palau</option>
+                <option value="PS">PS-Palestine, State of</option>
+                <option value="PA">PA-Panama</option>
+                <option value="PG">PG-Papua New Guinea</option>
+                <option value="PY">PY-Paraguay</option>
+                <option value="PE">PE-Peru</option>
+                <option value="PH">PH-Philippines</option>
+                <option value="PN">PN-Pitcairn</option>
+                <option value="PT">PT-Portugal</option>
+                <option value="PR">PR-Puerto Rico</option>
+                <option value="QA">QA-Qatar</option>
+                <option value="RE">RE-Réunion</option>
+                <option value="RO">RO-Romania</option>
+                <option value="RU">RU-Russian Federation</option>
+                <option value="RW">RW-Rwanda</option>
+                <option value="BL">BL-Saint Barthélemy</option>
+                <option value="SH">SH-Saint Helena, Ascension and Tristan da Cunha</option>
+                <option value="KN">KN-Saint Kitts and Nevis</option>
+                <option value="LC">LC-Saint Lucia</option>
+                <option value="MF">MF-Saint Martin (French part)</option>
+                <option value="PM">PM-Saint Pierre and Miquelon</option>
+                <option value="VC">VC-Saint Vincent and the Grenadines</option>
+                <option value="WS">WS-Samoa</option>
+                <option value="SM">SM-San Marino</option>
+                <option value="ST">ST-Sao Tome and Principe</option>
+                <option value="SA">SA-Saudi Arabia</option>
+                <option value="SN">SN-Senegal</option>
+                <option value="RS">RS-Serbia</option>
+                <option value="SC">SC-Seychelles</option>
+                <option value="SL">SL-Sierra Leone</option>
+                <option value="SG">SG-Singapore</option>
+                <option value="SX">SX-Sint Maarten (Dutch part)</option>
+                <option value="SK">SK-Slovakia</option>
+                <option value="SI">SI-Slovenia</option>
+                <option value="SB">SB-Solomon Islands</option>
+                <option value="SO">SO-Somalia</option>
+                <option value="ZA">ZA-South Africa</option>
+                <option value="GS">GS-South Georgia and the South Sandwich Islands</option>
+                <option value="SS">SS-South Sudan</option>
+                <option value="ES">ES-Spain / Canaries</option>
+                <option value="LK">LK-Sri Lanka</option>
+                <option value="SD">SD-Sudan</option>
+                <option value="SR">SR-Suriname</option>
+                <option value="SJ">SJ-Svalbard and Jan Mayen</option>
+                <option value="SZ">SZ-Swaziland</option>
+                <option value="SE">SE-Sweden</option>
+                <option value="CH">CH-Switzerland</option>
+                <option value="SY">SY-Syrian Arab Republic</option>
+                <option value="TW">TW-Taiwan (Province of China)</option>
+                <option value="TJ">TJ-Tajikistan</option>
+                <option value="TZ">TZ-Tanzania</option>
+                <option value="TH">TH-Thailand</option>
+                <option value="TL">TL-Timor-Leste (East Timor)</option>
+                <option value="TG">TG-Togo</option>
+                <option value="TK">TK-Tokelau</option>
+                <option value="TO">TO-Tonga</option>
+                <option value="TT">TT-Trinidad and Tobago</option>
+                <option value="TN">TN-Tunisia</option>
+                <option value="TR">TR-Turkey</option>
+                <option value="TM">TM-Turkmenistan</option>
+                <option value="TC">TC-Turks and Caicos Islands</option>
+                <option value="TV">TV-Tuvalu</option>
+                <option value="UG">UG-Uganda</option>
+                <option value="UA">UA-Ukraine</option>
+                <option value="AE">AE-United Arab Emirates</option>
+                <option value="US">US-United States of America</option>
+                <option value="UY">UY-Uruguay</option>
+                <option value="UZ">UZ-Uzbekistan</option>
+                <option value="VU">VU-Vanuatu</option>
+                <option value="VE">VE-Venezuela</option>
+                <option value="VN">VN-Viet Nam</option>
+                <option value="VG">VG-Virgin Islands (British) </option>
+                <option value="VI">VI-Virgin Islands (U.S.)</option>
+                <option value="WF">WF-Wallis and Futuna</option>
+                <option value="EH">EH-Western Sahara</option>
+                <option value="YE">YE-Yemen</option>
+                <option value="ZM">ZM-Zambia</option>
+                <option value="ZW">ZW-Zimbabwe</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formLanguage">First or preferred language</label>
+              <select name="formLanguage">
+                <option selected="selected" value=""></option>
+                <option value="">English</option>
+                <option value="">Gaelic</option>
+                <option value="">British Sign Language (BSL)</option>
+                <option value="">Any other national language</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formSchool">Previous school</label>
+              <select name="formSchool">
+                <option selected="selected" value=""></option>
+                <option value="757000006585271">Abercorn School</option>
+                <option value="757000005414896">Aberdeen Grammar School</option>
+                <option value="757000014113229">Aberdeen School for the Deaf</option>
+                <option value="757000014113230">Aberdeen Waldorf School</option>
+                <option value="757000011390268">Aboyne Academy</option>
+                <option value="757000002316439">Abronhill High School</option>
+                <option value="757000002316370">Airdrie Academy</option>
+                <option value="757000014113231">Aith Junior High School</option>
+                <option value="757000014099111">Albyn School</option>
+                <option value="757000008315203">Alford Academy </option>
+                <option value="757000002316459">All Saints Secondary School</option>
+                <option value="757000010954377">Alloa Academy </option>
+                <option value="757000008315683">Alness Academy</option>
+                <option value="757000008331162">Alva Academy</option>
+                <option value="757000010950632">Anderson High School </option>
+                <option value="757000014099097">Anna Ritchie School</option>
+                <option value="757000008329827">Annan Academy</option>
+                <option value="757000005448652">Arbroath Academy</option>
+                <option value="757000005421096">Arbroath High School</option>
+                <option value="757000014099084">Ardnamurchan High School</option>
+                <option value="757000008315300">Ardrossan Academy </option>
+                <option value="757000014113232">Ardvreck School</option>
+                <option value="757000005420279">Armadale Academy</option>
+                <option value="757000008331160">Arran High School</option>
+                <option value="757000002316469">Ashcraig Secondary School</option>
+                <option value="757000008314618">Ashton Secondary School</option>
+                <option value="757000002316421">Auchenharvie Academy</option>
+                <option value="757000006138193">Auchinleck Academy</option>
+                <option value="757000005422609">Auchmuty High School</option>
+                <option value="757000005415588">Ayr Academy</option>
+                <option value="757000014113233">Back School</option>
+                <option value="757000010954651">Baldragon Academy </option>
+                <option value="757000014113234">Balerno Community High School</option>
+                <option value="757000002316371">Balfron High School</option>
+                <option value="757000010953959">Ballikinrain School </option>
+                <option value="757000014113235">Balnacraig School</option>
+                <option value="757000014113236">Baltasound Junior High School</option>
+                <option value="757000008313463">Balwearie High School</option>
+                <option value="757000014113237">Banchory Academy</option>
+                <option value="757000014113238">Banff Academy</option>
+                <option value="757000014113239">Bankhead Academy</option>
+                <option value="757000002316417">Bannerman High School</option>
+                <option value="757000008315533">Bannockburn High School </option>
+                <option value="757000002316495">Barrhead High School</option>
+                <option value="757000007987568">Bathgate Academy</option>
+                <option value="757000014113240">Bayble School</option>
+                <option value="757000011033567">Beaconhurst School </option>
+                <option value="757000008315191">Bearsden Academy </option>
+                <option value="757000008313464">Beath High School</option>
+                <option value="757000014113241">Beatlie School Campus</option>
+                <option value="757000014113242">Beechwood School</option>
+                <option value="757000008313465">Beeslack Community High School</option>
+                <option value="757000014113243">Belhaven Hill School</option>
+                <option value="757000013614836">Bell Baxter High School</option>
+                <option value="757000005419944">Bellahouston Academy</option>
+                <option value="757000002316372">Bellshill Academy</option>
+                <option value="757000005441281">Belmont Academy</option>
+                <option value="757000002316501">Belmont House School</option>
+                <option value="757000008315474">Berwickshire High School</option>
+                <option value="757000002316373">Biggar High School</option>
+                <option value="757000002316453">Bishopbriggs Academy</option>
+                <option value="757000002316454">Bishopbriggs High School</option>
+                <option value="757000014113244">Black Isle Education Centre</option>
+                <option value="757000014113245">Blackford Brae Project(Barnardo)</option>
+                <option value="757000014113246">Blairgowrie High School</option>
+                <option value="757000002316419">Blantyre High School</option>
+                <option value="757000002316435">Boclair Academy</option>
+                <option value="757000005440549">Bo'ness Academy</option>
+                <option value="757000008313466">Boroughmuir High School</option>
+                <option value="757000002316479">Bothwellpark High School</option>
+                <option value="757000014113247">Brae High School</option>
+                <option value="757000005440580">Braes High School</option>
+                <option value="757000013349490">Braeview Academy</option>
+                <option value="757000014113248">Braidburn Special School</option>
+                <option value="757000014113249">Braidfield High School</option>
+                <option value="757000002316415">Braidhurst High School</option>
+                <option value="757000002316363">Brannock High School</option>
+                <option value="757000002316441">Breadalbane Academy</option>
+                <option value="757000005422579">Brechin High School</option>
+                <option value="757000008330057">Bridge of Don Academy</option>
+                <option value="757000014113250">Broomlea School</option>
+                <option value="757000014113251">Broughton High School</option>
+                <option value="757000005441000">Broxburn Academy</option>
+                <option value="757000002316476">Buchanan High School</option>
+                <option value="757000010953590">Buckhaven High School </option>
+                <option value="757000014113252">Buckie Community High School</option>
+                <option value="757000014113253">Burnhouse School</option>
+                <option value="757000014113254">Cademuir International School</option>
+                <option value="757000014113255">Cairnpark School</option>
+                <option value="757000002316375">Calderglen High School</option>
+                <option value="757000002316434">Calderhead High School</option>
+                <option value="757000002316484">Calderside Academy</option>
+                <option value="757000002316422">Caldervale High School</option>
+                <option value="757000005462543">Campbeltown Grammar School</option>
+                <option value="757000014113256">Camphill Rudolf Steiner Schools</option>
+                <option value="757000008334987">Campsie View School </option>
+                <option value="757000014113257">Canonmills School</option>
+                <option value="757000002316431">Cardinal Newman High School</option>
+                <option value="757000009584400">Cardinal Winning Secondary</option>
+                <option value="757000014113258">Cargilfield School</option>
+                <option value="757000002316432">Carluke High School</option>
+                <option value="757000014113259">Carnbooth School</option>
+                <option value="757000014113260">Carnoustie High School</option>
+                <option value="757000014113261">Carrick Academy</option>
+                <option value="757000005421805">Carrongrange School</option>
+                <option value="757000014113262">Carronhill School</option>
+                <option value="757000009413092">Cartvale Secondary School</option>
+                <option value="757000008310163">Castle Douglas High School</option>
+                <option value="757000008329792">Castlebay Community School</option>
+                <option value="757000008329808">Castlebrae Community High School</option>
+                <option value="757000008329820">Castlehead High School</option>
+                <option value="757000002316461">Castlemilk High School</option>
+                <option value="757000002316377">Cathkin High School</option>
+                <option value="757000014113263">Cedarbank School</option>
+                <option value="757000014113264">Cedars School of Excellence</option>
+                <option value="757000011034781">Charleston Academy </option>
+                <option value="757000014113265">Cherrybank School</option>
+                <option value="757000002316437">Chryston High School</option>
+                <option value="757000014113266">Claremont High School</option>
+                <option value="757000002316392">Cleveden Secondary School</option>
+                <option value="757000014113267">Clippens School</option>
+                <option value="757000008512828">Closeburn House School</option>
+                <option value="757000002316426">Clyde Valley High School</option>
+                <option value="757000002316452">Clydebank High School</option>
+                <option value="757000005415073">Clydeview Academy</option>
+                <option value="757000014113268">Clydeview School</option>
+                <option value="757000002316374">Coatbridge High School</option>
+                <option value="757000002316416">Coltness High School</option>
+                <option value="757000014113269">Columba High School</option>
+                <option value="757000014113270">Cordyce School</option>
+                <option value="757000002316499">Corseford Residential School</option>
+                <option value="757000014113271">Craigclowan School</option>
+                <option value="757000014113272">Craighalbert-Scottish Centre for Children with Motor Impairments
+                </option>
+                <option value="757000002316482">Craighead School</option>
+                <option value="757000002316385">Craigholme School</option>
+                <option value="757000013349576">Craigie High School</option>
+                <option value="757000008313468">Craigmount High School</option>
+                <option value="757000014113273">Craigpark School</option>
+                <option value="757000010954419">Craigroyston Community High School </option>
+                <option value="757000011034258">Crieff High School </option>
+                <option value="757000014113274">Croftcroighn School</option>
+                <option value="757000008315264">Culloden Academy </option>
+                <option value="757000014113275">Cults Academy</option>
+                <option value="757000002316378">Cumbernauld Academy</option>
+                <option value="757000014113276">Cumbernauld High School</option>
+                <option value="757000006137741">Cumnock Academy</option>
+                <option value="757000014113277">Cunard School</option>
+                <option value="757000014113278">Currie Community High School</option>
+                <option value="757000008338400">Dalbeattie High School </option>
+                <option value="757000014113279">Daldorch House School</option>
+                <option value="757000014113280">Daliburgh School</option>
+                <option value="757000011035193">Dalkeith High School </option>
+                <option value="757000008315304">Dalry Secondary School </option>
+                <option value="757000002316401">Dalziel High School</option>
+                <option value="757000014113281">Daniel Stewart's and Melville College</option>
+                <option value="757000005422632">Deans Community High School</option>
+                <option value="757000005421091">Denny High School</option>
+                <option value="757000008315700">Dingwall Academy</option>
+                <option value="757000008315776">Dollar Academy </option>
+                <option value="757000002316442">Donaldsons College</option>
+                <option value="757000005422084">Doon Academy</option>
+                <option value="757000014113282">Dornoch Academy</option>
+                <option value="757000002316423">Douglas Academy</option>
+                <option value="757000005415974">Douglas Ewart High School</option>
+                <option value="757000008361144">Drumchapel High School </option>
+                <option value="757000014113283">Drumchapel Learning Centre</option>
+                <option value="757000008331164">Drummond Community High School</option>
+                <option value="757000014113284">Drummond School</option>
+                <option value="757000014113286">Drummore School</option>
+                <option value="757000014113287">Drumpark School</option>
+                <option value="757000008330092">Dumbarton Academy</option>
+                <option value="757000014113288">Dumfries Academy</option>
+                <option value="757000008315371">Dumfries High School </option>
+                <option value="757000011050841">Dunbar Grammar School </option>
+                <option value="757000002316430">Dunblane High School</option>
+                <option value="757000002316376">Duncanrig Secondary School</option>
+                <option value="757000014113289">Dunedin School</option>
+                <option value="757000005404328">Dunfermline High School</option>
+                <option value="757000002316447">Dunoon Grammar School</option>
+                <option value="757000014113290">Duntarvie Pre-School Assessment Centre</option>
+                <option value="757000010983189">Dyce Academy </option>
+                <option value="757000008311456">Earlston High School</option>
+                <option value="757000002316407">Earnock High School</option>
+                <option value="757000002316471">East Park School</option>
+                <option value="757000002316383">Eastbank Academy</option>
+                <option value="757000014113291">Eastmuir School</option>
+                <option value="757000002316403">Eastwood High School</option>
+                <option value="757000010858880">Eden Park Academy (Scotland)</option>
+                <option value="757000008313482">Elgin Academy</option>
+                <option value="757000010954373">Elgin High School </option>
+                <option value="757000008331176">Ellon Academy </option>
+                <option value="757000014113292">Elmbank Special School</option>
+                <option value="757000008317806">Eyemouth High School</option>
+                <option value="757000014113293">Fairfield School</option>
+                <option value="757000002316446">Falkirk High School</option>
+                <option value="757000014113294">Falkland House School</option>
+                <option value="757000002316503">Fallside School</option>
+                <option value="757000014113295">Farr High School</option>
+                <option value="757000005448717">Fernhill School</option>
+                <option value="757000014113296">Fettes College</option>
+                <option value="757000002316478">Firpark School</option>
+                <option value="757000010931353">Firrhill High School</option>
+                <option value="757000008313495">Forfar Academy</option>
+                <option value="757000011050925">Forres Academy </option>
+                <option value="757000010954456">Forrester High School </option>
+                <option value="757000014113297">Fortrose Academy</option>
+                <option value="757000014113298">Fraserburgh Academy</option>
+                <option value="757000014113299">Gadburn School</option>
+                <option value="757000014113300">Gairloch High School</option>
+                <option value="757000005444579">Galashiels Academy</option>
+                <option value="757000002316451">Garnock Academy</option>
+                <option value="757000014113301">Garvel School</option>
+                <option value="757000014113302">Geilsland School</option>
+                <option value="757000008345923">George Heriot's School </option>
+                <option value="757000010262052">George Watson's College </option>
+                <option value="757000005415928">Girvan Academy</option>
+                <option value="757000005448320">Glen Urquhart High School</option>
+                <option value="757000014113303">Glenalmond College</option>
+                <option value="757000014113304">Glenburn School</option>
+                <option value="757000002316457">Glencryan School</option>
+                <option value="757000002316497">Gleniffer High School</option>
+                <option value="757000008334024">Glenrothes High School</option>
+                <option value="757000008330117">Glenwood High School</option>
+                <option value="757000014113305">Golspie High School</option>
+                <option value="757000014002267">Good Shepherd Centre</option>
+                <option value="757000014113306">Gordonstoun School</option>
+                <option value="757000014113307">Gourock High School</option>
+                <option value="757000008626432">Govan High School</option>
+                <option value="757000010954480">Gracemount High School </option>
+                <option value="757000005441336">Graeme High School</option>
+                <option value="757000005415954">Grange Academy</option>
+                <option value="757000005422638">Grangemouth High School</option>
+                <option value="757000014113308">Grantown Grammar School</option>
+                <option value="757000014113309">Greenburn School</option>
+                <option value="757000002316409">Greenfaulds High School</option>
+                <option value="757000014113310">Greenock Academy</option>
+                <option value="757000014113311">Greenock High School</option>
+                <option value="757000014113312">Greenview School</option>
+                <option value="757000005420056">Greenwood Academy</option>
+                <option value="757000011035302">Grove Academy </option>
+                <option value="757000008315646">Gryffe High School </option>
+                <option value="757000002316365">Hamilton College</option>
+                <option value="757000002316397">Hamilton Grammar School</option>
+                <option value="757000014113313">Hamilton School for the Deaf</option>
+                <option value="757000014113314">Hampden School</option>
+                <option value="757000013615023">Harlaw Academy</option>
+                <option value="757000014113315">Harmeny Education Trust</option>
+                <option value="757000013349600">Harris Academy</option>
+                <option value="757000002316445">Hawick High School</option>
+                <option value="757000014113316">Haysholm School</option>
+                <option value="757000014113317">Hazelwood School (Aberdeen)</option>
+                <option value="757000002316466">Hazelwood School (Glasgow)</option>
+                <option value="757000010953882">Hazlehead Academy </option>
+                <option value="757000014113318">Headwell School</option>
+                <option value="757000005440943">Hermitage Academy</option>
+                <option value="757000010955302">High School Of Dundee </option>
+                <option value="757000005421652">Hillhead High School</option>
+                <option value="757000002316388">Hillpark Secondary School</option>
+                <option value="757000014113319">Hillside School (Burntisland)</option>
+                <option value="757000014113320">Hillside School (Cumnock)</option>
+                <option value="757000014113321">Hollybrook School</option>
+                <option value="757000002316398">Holy Cross High School</option>
+                <option value="757000014113322">Holy Rood RC High School</option>
+                <option value="757000002316387">Holyrood Secondary School</option>
+                <option value="757000014113323">Hospital &amp; Home Tuition Service</option>
+                <option value="757000014113324">Howdenburn Schoolhouse</option>
+                <option value="757000014113325">Howdenhall &amp; St Katharine's Special School</option>
+                <option value="757000014113326">Howford School</option>
+                <option value="757000002316412">Hunter High School</option>
+                <option value="757000002316473">Hutchesons' Grammar School</option>
+                <option value="757000014113327">Hyndhead School</option>
+                <option value="757000002316393">Hyndland Secondary School</option>
+                <option value="757000014113328">Imam Muhammad Zakariya School</option>
+                <option value="757000014113329">International School of Aberdeen</option>
+                <option value="757000005448491">Inveralmond Community High School</option>
+                <option value="757000008320697">Inverclyde Academy</option>
+                <option value="757000014113330">Invergarven School</option>
+                <option value="757000014113331">Invergordon Academy</option>
+                <option value="757000005421076">Inverkeithing High School</option>
+                <option value="757000010954375">Inverness High School </option>
+                <option value="757000011035146">Inverness Royal Academy </option>
+                <option value="757000013623290">Inverurie Academy</option>
+                <option value="757000008360632">Irvine Royal Academy </option>
+                <option value="757000010954680">Islay High School </option>
+                <option value="757000002316493">Isobel Mair School</option>
+                <option value="757000008317850">James Gillespie's High School </option>
+                <option value="757000005422654">James Hamilton Academy</option>
+                <option value="757000014113332">James McFarlane School</option>
+                <option value="757000014113333">James Reid School</option>
+                <option value="757000010955323">Jedburgh Grammar School </option>
+                <option value="757000014113334">John Fergus School</option>
+                <option value="757000002316427">John Ogilvie High School</option>
+                <option value="757000002316470">John Paul Academy</option>
+                <option value="757000005450476">Johnstone High School</option>
+                <option value="757000014113335">Johnstone Technical Education Centre</option>
+                <option value="757000002316394">Jordanhill School</option>
+                <option value="757000014113336">Kaimes School</option>
+                <option value="757000002316485">Kear Campus School</option>
+                <option value="757000014113337">Keith Grammar School</option>
+                <option value="757000014113338">Kelbourne School</option>
+                <option value="757000008315713">Kelso High School </option>
+                <option value="757000008315254">Kelvinside Academy </option>
+                <option value="757000008360812">Kemnay Academy </option>
+                <option value="757000014113339">Kersland School</option>
+                <option value="757000002316502">Kibble Education and Care Centre</option>
+                <option value="757000014113340">Kilchuimen Academy</option>
+                <option value="757000014113341">Kildean School</option>
+                <option value="757000014113342">Kilgraston School</option>
+                <option value="757000008328211">Kilmarnock Academy</option>
+                <option value="757000014113343">Kilmaron School</option>
+                <option value="757000014113344">Kilpatrick School</option>
+                <option value="757000002316379">Kilsyth Academy</option>
+                <option value="757000008338645">Kilwinning Academy </option>
+                <option value="757000010954324">Kincorth Academy </option>
+                <option value="757000002316389">Kings Park Secondary School</option>
+                <option value="757000014113345">Kingsinch School</option>
+                <option value="757000014113346">Kingspark School (Dundee)</option>
+                <option value="757000013426830">Kingussie High School</option>
+                <option value="757000014113347">Kinlochbervie High School</option>
+                <option value="757000010954376">Kinlochleven High School </option>
+                <option value="757000008315385">Kinross High School </option>
+                <option value="757000010953658">Kirkcaldy High School </option>
+                <option value="757000002316369">Kirkcudbright Academy</option>
+                <option value="757000005420065">Kirkintilloch High School</option>
+                <option value="757000010954712">Kirkland High School &amp; Community College</option>
+                <option value="757000014113348">Kirkriggs School</option>
+                <option value="757000014113349">Kirkwall Grammar School</option>
+                <option value="757000014113350">Kittoch School</option>
+                <option value="757000002316395">Knightswood Secondary School</option>
+                <option value="757000008315686">Knox Academy</option>
+                <option value="757000006136730">Kyle Academy</option>
+                <option value="757000014113351">Ladywell School</option>
+                <option value="757000002316399">Lanark Grammar School</option>
+                <option value="757000014113352">Langholm Academy</option>
+                <option value="757000014113354">Langlands School</option>
+                <option value="757000014113353">Langlands School</option>
+                <option value="757000005419957">Larbert High School</option>
+                <option value="757000005415437">Largs Academy</option>
+                <option value="757000002316400">Larkhall Academy</option>
+                <option value="757000008344832">Lasswade High School Centre</option>
+                <option value="757000011034264">Lathallan Preparatory School</option>
+                <option value="757000014113355">Lawside RC Academy</option>
+                <option value="757000014113356">Lecropt School and Family Support Service</option>
+                <option value="757000010954516">Leith Academy </option>
+                <option value="757000002316425">Lenzie Academy</option>
+                <option value="757000002316440">Lesmahagow High School</option>
+                <option value="757000011182353">Levenmouth Academy </option>
+                <option value="757000008314727">Liberton High School</option>
+                <option value="757000014113357">Lilybank School</option>
+                <option value="757000014113358">Linburn School</option>
+                <option value="757000006334510">Linlithgow Academy</option>
+                <option value="757000014113359">Linn Moor Residential School</option>
+                <option value="757000002316496">Linwood High School</option>
+                <option value="757000014113360">Lionel School</option>
+                <option value="757000014113361">Lochaber High School</option>
+                <option value="757000005421845">Lochend Community High School</option>
+                <option value="757000008579639">Lochgelly High School</option>
+                <option value="757000014113362">Lochgelly North School</option>
+                <option value="757000002316449">Lochgilphead High School</option>
+                <option value="757000014113363">Lochies School</option>
+                <option value="757000005448218">Lockerbie Academy</option>
+                <option value="757000008315299">Lomond School </option>
+                <option value="757000014113364">Loretto School</option>
+                <option value="757000008315259">Lornshill Academy </option>
+                <option value="757000010954342">Lossiemouth High School </option>
+                <option value="757000005421941">Loudoun Academy</option>
+                <option value="757000002316390">Lourdes Secondary School</option>
+                <option value="757000005422604">Mackie Academy</option>
+                <option value="757000005448744">Madras College</option>
+                <option value="757000014113365">Mainholm Academy</option>
+                <option value="757000008334026">Mallaig High School</option>
+                <option value="757000014113366">Mannafields Christian School</option>
+                <option value="757000014113367">Marlpool School</option>
+                <option value="757000002316366">Marr College</option>
+                <option value="757000014113368">Mary Erskine School</option>
+                <option value="757000008311628">Mavisbank School </option>
+                <option value="757000010954678">Maxwelltown High School </option>
+                <option value="757000008331189">McLaren High School</option>
+                <option value="757000014113369">Mearns Academy</option>
+                <option value="757000002316433">Mearns Castle High School</option>
+                <option value="757000008314741">Meldrum Academy</option>
+                <option value="757000014113370">Menzieshill High School</option>
+                <option value="757000008315754">Merchiston Castle School </option>
+                <option value="757000005403794">Merkland School</option>
+                <option value="757000008598561">Merrick School/Common Thread School</option>
+                <option value="757000014113371">Mid Yell Junior High School</option>
+                <option value="757000014113372">Middlefield Residential School</option>
+                <option value="757000014113373">Millburn Academy</option>
+                <option value="757000014113374">Milne's High School</option>
+                <option value="757000014113375">Milton School</option>
+                <option value="757000014113376">Mintlaw Academy</option>
+                <option value="757000008315401">Moffat Academy </option>
+                <option value="757000013605147">Monifieth High School</option>
+                <option value="757000014113377">Montrose Academy</option>
+                <option value="757000011562369">Moore House School </option>
+                <option value="757000008330077">Morgan Academy</option>
+                <option value="757000005440605">Morrison's Academy</option>
+                <option value="757000008313511">Musselburgh Grammar School</option>
+                <option value="757000011035008">Nairn Academy </option>
+                <option value="757000014113378">Nerston Residential School</option>
+                <option value="757000002316486">NEW LANARK PRIMARY SCHOOL</option>
+                <option value="757000011034431">New Struan School </option>
+                <option value="757000008313569">Newbattle High School</option>
+                <option value="757000010953610">Newlands Junior College </option>
+                <option value="757000008315692">North Berwick High School </option>
+                <option value="757000014113379">North Walls Community School</option>
+                <option value="757000010954308">Northfield Academy </option>
+                <option value="757000002316462">Notre Dame High School (Glasgow)</option>
+                <option value="757000014113380">Notre Dame High School (Greenock)</option>
+                <option value="757000014113381">Oakbank School</option>
+                <option value="757000014113382">Oaklands Special School</option>
+                <option value="757000014113383">Oakwood Education Trust</option>
+                <option value="757000002316448">Oban High School</option>
+                <option value="757000014113285">Oban Primary Campus Learning Centre</option>
+                <option value="757000011035321">Ochil Tower School </option>
+                <option value="757000014113384">Ogilvie School Campus</option>
+                <option value="757000008313594">Oldmachar Academy</option>
+                <option value="757000014113385">Osborne House School</option>
+                <option value="757000011035282">Our Lady &amp; St Patrick's High School </option>
+                <option value="757000002316368">Our Lady's High School, Cumbernauld</option>
+                <option value="757000002316402">Our Lady's High School, Motherwell</option>
+                <option value="757000014113386">Paible School</option>
+                <option value="757000005422562">Paisley Grammar School</option>
+                <option value="757000002316420">Park Mains High School</option>
+                <option value="757000014113387">Park School</option>
+                <option value="757000002316467">Parkhill Secondary School </option>
+                <option value="757000014113388">Parklands School</option>
+                <option value="757000014113389">Parkview School</option>
+                <option value="757000005440558">Peebles High School</option>
+                <option value="757000013428059">Penicuik High School</option>
+                <option value="757000014113390">Pentland School</option>
+                <option value="757000005448666">Perth Academy</option>
+                <option value="757000014113391">Perth Grammar School</option>
+                <option value="757000005448630">Perth High School</option>
+                <option value="757000010950627">Peterhead Academy </option>
+                <option value="757000014113392">Pierowall Junior High School</option>
+                <option value="757000014113393">Pilrig Park School</option>
+                <option value="757000008338056">Pinewood School </option>
+                <option value="757000014113394">Pitlochry High</option>
+                <option value="757000011033572">Plockton High School </option>
+                <option value="757000009836930">Port Glasgow High School</option>
+                <option value="757000002316477">Portland High School</option>
+                <option value="757000010950630">Portlethen Academy </option>
+                <option value="757000005440958">Portobello High School</option>
+                <option value="757000011033587">Portree High School </option>
+                <option value="757000010261988">Preston Lodge High School</option>
+                <option value="757000005415854">Prestwick Academy</option>
+                <option value="757000014113395">Primary Pupil Support Service</option>
+                <option value="757000014113396">Prospect Bank School</option>
+                <option value="757000008315788">Queen Anne High School </option>
+                <option value="757000005416217">Queen Margaret Academy</option>
+                <option value="757000013605204">Queen Victoria School</option>
+                <option value="757000013605178">Queensferry Community High School</option>
+                <option value="757000002316456">Redburn School</option>
+                <option value="757000008317828">Renfrew High School</option>
+                <option value="757000014113397">Richmond Park School</option>
+                <option value="757000002316487">Ridgepark School</option>
+                <option value="757000014113398">River of Life Christian School</option>
+                <option value="757000010262005">Robert Gordon's College </option>
+                <option value="757000014113399">Robert Henryson School</option>
+                <option value="757000002316418">Rosehall High School</option>
+                <option value="757000014113400">Rosepark Tutorial Centre</option>
+                <option value="757000014113401">Rosevale School</option>
+                <option value="757000010262356">Ross High School </option>
+                <option value="757000002316504">Rosshall Academy</option>
+                <option value="757000014113402">Rossie Secure Accommodation Services</option>
+                <option value="757000014113403">Rosslyn School</option>
+                <option value="757000014113404">Rothesay Academy</option>
+                <option value="757000014113405">Rowanfield Special School</option>
+                <option value="757000002316443">Royal Blind School</option>
+                <option value="757000014113406">Rudolf Steiner School of Edinburgh</option>
+                <option value="757000002316489">Rutherglen High School</option>
+                <option value="757000014113407">Saltersgate School</option>
+                <option value="757000014113408">Sanday Community School</option>
+                <option value="757000002316483">Sanderson High School</option>
+                <option value="757000014113409">Sandwick Junior High School</option>
+                <option value="757000010954656">Sanquhar Academy </option>
+                <option value="757000014113410">Scalloway Junior High School</option>
+                <option value="757000009531806">School Outside Scotland</option>
+                <option value="757000014113411">Seafield School</option>
+                <option value="757000014113412">Seamab School</option>
+                <option value="757000014113413">Secondary Student Support Service</option>
+                <option value="757000002316444">Selkirk High School</option>
+                <option value="757000002316460">Sgoil Ghàidhlig Ghlaschu (Glasgow Gaelic School) </option>
+                <option value="757000008328236">Sgoil Lionacleit </option>
+                <option value="757000014113414">Sgoil-nan-Loch</option>
+                <option value="757000014113415">Shawbost School</option>
+                <option value="757000002316464">Shawlands Academy</option>
+                <option value="757000014113416">Sir E Scott School</option>
+                <option value="757000014113417">Skerries School</option>
+                <option value="757000005421062">Smithycroft Secondary School</option>
+                <option value="757000014113418">Snowdon School</option>
+                <option value="757000014113419">South Park School</option>
+                <option value="757000002316500">Spark of Genius Learning Centre</option>
+                <option value="757000014113420">Speyside High School</option>
+                <option value="757000014113421">Springboig St John's</option>
+                <option value="757000002316384">Springburn Academy</option>
+                <option value="757000014113422">Springvale Education Trust</option>
+                <option value="757000002316408">St Aidans High School</option>
+                <option value="757000002316474">St Aloysius' College</option>
+                <option value="757000002316411">St Ambrose High School</option>
+                <option value="757000008315145">St Andrew's Academy (Paisley)</option>
+                <option value="757000002316438">St Andrew's and St Bride's High School </option>
+                <option value="757000002316413">St Andrews High School (Clydebank)</option>
+                <option value="757000002316475">St Andrews High School (Coatbridge)</option>
+                <option value="757000014113423">St Andrew's R C High School</option>
+                <option value="757000014113424">St Andrew's School</option>
+                <option value="757000002316405">St Andrews Secondary School (Glasgow)</option>
+                <option value="757000008345183">St Augustine's High School </option>
+                <option value="757000008329687">St Benedict's High School</option>
+                <option value="757000014113425">St Brendan's High School</option>
+                <option value="757000014113426">St Clement's School</option>
+                <option value="757000014113427">St Columba's High School</option>
+                <option value="757000005415205">St Columba's High School (Gourock)</option>
+                <option value="757000016024836">St Columba's R C Highschool (Dunfermiline)</option>
+                <option value="757000022909937">St Columba's School</option>
+                <option value="757000014113428">St Crispin's School</option>
+                <option value="757000014113429">St Cuthbert's High School</option>
+                <option value="757000011034430">St David's RC High School</option>
+                <option value="757000014113430">St Duthus School</option>
+                <option value="757000014113431">St Francis Day Boy Unit</option>
+                <option value="757000014113432">St Francis Day Unit</option>
+                <option value="757000014113433">St Francis Unit, Plains</option>
+                <option value="757000014113434">St George's School for Girls</option>
+                <option value="757000014113435">St Joan of Arc School</option>
+                <option value="757000005450501">St John's RC High School</option>
+                <option value="757000008330093">St Joseph's Academy</option>
+                <option value="757000006138381">St Joseph's College</option>
+                <option value="757000005421640">St Kentigern's Academy</option>
+                <option value="757000014113436">St Kevin's School</option>
+                <option value="757000010143399">St Leonard's School</option>
+                <option value="757000002316494">St Luke's High School</option>
+                <option value="757000010326632">St Machar Academy</option>
+                <option value="757000010326623">St Machar Academy</option>
+                <option value="757000002316465">St Margaret Mary's Secondary School</option>
+                <option value="757000008314900">St Margaret's Academy</option>
+                <option value="757000002316406">St Margaret's High School</option>
+                <option value="757000014113437">St Margaret's School</option>
+                <option value="757000014113438">St Margaret's School for Girls-Aberdeen</option>
+                <option value="757000009482438">St Mary's Kenmuir</option>
+                <option value="757000014113440">St Mary's Music School</option>
+                <option value="757000014113439">St Mary's School Melrose</option>
+                <option value="757000002316450">St Matthew's Academy</option>
+                <option value="757000002316458">St Maurices High School</option>
+                <option value="757000014113441">St Michael's Academy</option>
+                <option value="757000005421958">St Modan's High School</option>
+                <option value="757000002316381">St Mungos Academy</option>
+                <option value="757000002316404">St Mungo's RC High School</option>
+                <option value="757000014113442">St Nicholas' School</option>
+                <option value="757000002316364">St Ninians High School (East Renfrewshire)</option>
+                <option value="757000011034815">St Ninian's High School (Kirkintilloch)</option>
+                <option value="757000008315108">St Oswald's School</option>
+                <option value="757000014113443">St Patrick's High School</option>
+                <option value="757000005420252">St Paul's High School</option>
+                <option value="757000013349633">St Paul's RC Academy</option>
+                <option value="757000005742802">St Peter the Apostle High School</option>
+                <option value="757000005404933">St Philips's School</option>
+                <option value="757000014113444">St Raymond's School</option>
+                <option value="757000002316414">St Rochs Secondary School</option>
+                <option value="757000014113445">St Saviour's RC High School</option>
+                <option value="757000014113446">St Serf's School</option>
+                <option value="757000002316498">St Stephen's High School</option>
+                <option value="757000002316396">St Thomas Aquinas School</option>
+                <option value="757000014113447">St Thomas Of Aquin's High School</option>
+                <option value="757000002316468">St Vincent School for the Blind and Deaf</option>
+                <option value="757000014113448">Stanecastle School</option>
+                <option value="757000002316490">Stanmore House School</option>
+                <option value="757000014113449">Starley Hall School</option>
+                <option value="757000008317811">Stewarton Academy</option>
+                <option value="757000005420994">Stirling High School</option>
+                <option value="757000002316410">Stonelaw High School</option>
+                <option value="757000005421956">Stranraer Academy</option>
+                <option value="757000014113450">Strathallan School</option>
+                <option value="757000002316429">Strathaven Academy</option>
+                <option value="757000008330109">Stromness Academy</option>
+                <option value="757000014113451">Stronsay Junior High School</option>
+                <option value="757000014113452">Sycamore School</option>
+                <option value="757000014113453">Tain Royal Academy</option>
+                <option value="757000014113454">Tarbert Academy</option>
+                <option value="757000002316362">Taylor High School</option>
+                <option value="757000008331195">The Community School of Auchterarder</option>
+                <option value="757000014113455">The Edinburgh Academy</option>
+                <option value="757000002316472">The Glasgow Academy</option>
+                <option value="757000014113456">The Glebe School</option>
+                <option value="757000008331201">The Gordon Schools</option>
+                <option value="757000008315696">The High School Of Glasgow </option>
+                <option value="757000005421637">The James Young High School</option>
+                <option value="757000014113457">The Mary Russell School</option>
+                <option value="757000014113458">The New School Butterstone</option>
+                <option value="757000008311508">The Nicolson Institute</option>
+                <option value="757000014113459">The Raeden Centre Nursery School</option>
+                <option value="757000014113460">The Royal High School</option>
+                <option value="757000014113461">The Wilton Centre</option>
+                <option value="757000014113462">Thomas Muir High School</option>
+                <option value="757000008315780">Thurso High School </option>
+                <option value="757000014113463">Tiree High School</option>
+                <option value="757000014113464">Tobermory High School</option>
+                <option value="757000008330108">Torry Academy</option>
+                <option value="757000014113465">Torwood School</option>
+                <option value="757000014113466">Total School</option>
+                <option value="757000013622869">Trinity Academy</option>
+                <option value="757000013622857">Trinity High School (Renfrew)</option>
+                <option value="757000002316428">Trinity High School (Rutherglen))</option>
+                <option value="757000014113467">Troup House School</option>
+                <option value="757000002316455">Turnbull High School</option>
+                <option value="757000014113468">Turriff Academy</option>
+                <option value="757000010954544">Tynecastle High School </option>
+                <option value="757000002316380">Uddingston Grammar School</option>
+                <option value="757000014113469">Ullapool High School</option>
+                <option value="757000002316367">Vale Of Leven Academy</option>
+                <option value="757000002316480">Victoria Park School</option>
+                <option value="757000005448287">Viewforth High School</option>
+                <option value="757000013614629">Waid Academy</option>
+                <option value="757000006138011">Wallace Hall Academy</option>
+                <option value="757000005448780">Wallace High School</option>
+                <option value="757000011919761">Webster's High School </option>
+                <option value="757000014113470">Wellington Academy</option>
+                <option value="757000006138592">Wellington School (Ayr)</option>
+                <option value="757000014113471">Wellington School (Midlothian)</option>
+                <option value="757000005421118">West Calder High School</option>
+                <option value="757000014113472">West Mains School</option>
+                <option value="757000010954648">Wester Hailes Education Centre </option>
+                <option value="757000014113473">Westfield School</option>
+                <option value="757000014113474">Westhill Academy</option>
+                <option value="757000009482722">Westmuir High School</option>
+                <option value="757000014113475">Whalsay School</option>
+                <option value="757000014113476">Whins of Milton</option>
+                <option value="757000005440617">Whitburn Academy</option>
+                <option value="757000014113477">White Gates Learning Centre</option>
+                <option value="757000002316382">Whitehill Secondary School</option>
+                <option value="757000010953949">Wick High School </option>
+                <option value="757000002316492">Williamwood High School</option>
+                <option value="757000002316488">Willowbank School</option>
+                <option value="757000014113478">Windsor Park School</option>
+                <option value="757000014113479">Witchhill School</option>
+                <option value="757000002316491">Woodfarm High School</option>
+                <option value="757000002446730">Woodhead Support Services</option>
+                <option value="757000014113480">Woodlands School</option>
+                <option value="757000008315298">Woodmill High School</option>
+                <option value="757000014113481">Woodstock School</option>
+                <option value="757000013426811">Overseas school</option>
+                <option value="757000013426810">Non-UK EU school</option>
+                <option value="757000013426808">Non-Scottish UK school</option>
+                <option value="757000009531817">Home Schooled</option>
+                <option value="999999999999999">- none of the above -</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formEvacuationAssistance">Do you need assistance during building evacuation?</label>
+              <select name="formEvacuationAssistance">
+                <option selected="selected" value=""></option>
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formCarringResponsibilities">Do you have unpaid caring responsibilities for a family member or
+                friend who is ill, frail, disabled or has a mental health or addiction problems.</label>
+              <select name="formCarringResponsibilities">
+                <option selected="selected" value=""></option>
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formCarringResponsibilitiesQ">Who do you care for?</label>
+              <select name="formCarringResponsibilitiesQ">
+                <option selected="selected" value=""></option>
+                <option value="1">1 - Disabled child/children under 18 </option>
+                <option value="2">2 - Child/children under 18</option>
+                <option value="3">3 - Adult/s 18 and over </option>
+                <option value="4">4 - Prefer not to say</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formCareExperience">Care experienced</label>
+              <select name="formCareExperience">
+                <option selected="selected" value=""></option>
+                <option value="SF">Care Experienced</option>
+                <option value="2">2:Not Care Experienced</option>
+              </select>
+              <p class="formInfoBox">Care-experienced definition; 'anyone who has been or is currently in care or from a
+                looked-after background at any stage of their life, no matter how short. This care may have been
+                provided in one of many different settings such as in residential care, foster care, kinship care or
+                looked after at home with a supervision requirement.'</p>
+            </div>
+
+            <div><button class="btnFormSave">Save</button></div>
+
+          </form>
+
+        </ul>
+      </dd>
+    </div>
+
+    <div>
+      <dt class="dropdownMenuItemTitle">
+        <div class="titleSpanDiv">
+          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
+              health_and_safety
+            </span>Disabilities</p>
+          <div class="dropdownMenuProgressBar">
+            <div class="dropdownMenuProgressBarColor" style="width: 50%">
+              50%
+            </div>
+          </div>
+        </div>
+      </dt>
+      <dd class="dropdownMenuItemData hide">
+        <ul class="dropdownSubmenu">
+
+          <form action="">
+
+            <p>Please select any of the following that apply to you:</p><br><br>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability1">No known disability</label>
+              <input type="checkbox" name="formDisability1">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability2">A specific learning difficulty such as dyslexia, dyspraxia or ADHD</label>
+              <input type="checkbox" name="formDisability2">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability3">A Social/communication impairment such as Asperger's syndrome/other spectrum
+                disorder</label>
+              <input type="checkbox" name="formDisability3">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability4">A long standing illness or health condition such as cancer, HIV, diabetes, or
+                epilepsy</label>
+              <input type="checkbox" name="formDisability4">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability5">A mental health condition such as depression, schizophrenia or anxiety
+                disorder</label>
+              <input type="checkbox" name="formDisability5">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability6">A physical impairment or mobility issues such as difficulty using arms or
+                using a wheelchair or crutches
+              </label>
+              <input type="checkbox" name="formDisability6">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability7">Deaf or hearing impairment</label>
+              <input type="checkbox" name="formDisability7">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability8">Blind or serious visual impairment uncorrected by glasses</label>
+              <input type="checkbox" name="formDisability8">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability9">A disability impairment or medical condition that is not listed above</label>
+              <input type="checkbox" name="formDisability9">
+            </div>
+
+            <div class="formDisabilityBox">
+              <label for="formDisability10">A specific learning disability such as Down's Syndrome</label>
+              <input type="checkbox" name="formDisability10">
+            </div>
+
+            <div>
+              <label for="formDisability11">Disability</label>
+              <textarea name="formDisability11" cols="30" rows="10"></textarea>
+              <p class="formInfoBox">Use this box to tell us more about your disability (optional).</p>
+            </div>
+
+            <div><button class="btnFormSave">Save</button></div>
+
+          </form>
+        </ul>
+      </dd>
+    </div>
+
+    <div>
+      <dt class="dropdownMenuItemTitle">
+        <div class="titleSpanDiv">
+          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
+              diversity_3
+            </span>Equality and Diversity</p>
+
+          <div class="dropdownMenuProgressBar">
+            <div class="dropdownMenuProgressBarColor" style="width: 0%; border: none;">
+              0%
+            </div>
+          </div>
+
+        </div>
+      </dt>
+      <dd class="dropdownMenuItemData hide">
+        <ul class="dropdownSubmenu">
+
+          <form action="">
+
+            <div>
+              <label for="formGender">Gender</label>
+              <select name="formGender">
+                <option selected="selected" value=""></option>
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+                <option value="N">In Another Way</option>
+                <option value="09">Not known (do not include in question but do code as Not known in FES)</option>
+                <option value="13">Prefer not to say</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formGenderIdentity">Gender identity</label>
+              <select name="formGenderIdentity">
+                <option selected="selected" value=""></option>
+                <option value="1">1 - Same as birth</option>
+                <option value="2">2 - Different from birth</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formGenderExpression">Gender expression</label>
+              <select name="formGenderExpression">
+                <option selected="selected" value=""></option>
+                <option value="1">1 - Yes identified as trans</option>
+                <option value="2">2 - No not identified as trans</option>
+                <option value="9">9 - Not known (do not include in question but do code as Not known in FES)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formSexualOrientation">Sexual orientation</label>
+              <select name="formSexualOrientation">
+                <option selected="selected" value=""></option>
+                <option value="1">1 - Heterosexual / straight</option>
+                <option value="2">2 - Gay Man</option>
+                <option value="3">3 - Gay Woman/Lesbian</option>
+                <option value="4">4 - Bi / Bisexual</option>
+                <option value="5">5 - Other</option>
+                <option value="6">6 - Prefer not to say</option>
+                <option value="99">Not available</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formPregnancy">Are you pregnant or have you been pregnant in the last year?</label>
+              <select name="formPregnancy">
+                <option selected="selected" value=""></option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formDependantChildren">Number of dependant children in your care (leave blank if none)</label>
+              <input type="text" name="formDependantChildren">
+            </div>
+
+            <div>
+              <label for="formReligion">Religion / belief</label>
+              <select name="formReligion">
+                <option selected="selected" value=""></option>
+                <option value="01">01 - None</option>
+                <option value="02">02 - Christian: Protestant</option>
+                <option value="03">03 - Christian: Roman Catholic</option>
+                <option value="04">04 - Christian: Other</option>
+                <option value="05">05 - Muslim</option>
+                <option value="06">06 - Buddhist</option>
+                <option value="07">07 - Sikh</option>
+                <option value="08">08 - Jewish</option>
+                <option value="09">09 - Hindu</option>
+                <option value="10">10 - Another religion or body</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formEthnicity">Ethnicity</label>
+              <select name="formEthnicity">
+                <option selected="selected" value=""></option>
+                <option value="10">10 - Scottish</option>
+                <option value="11">11 - English</option>
+                <option value="12">12 - Welsh</option>
+                <option value="13">13 - Irish</option>
+                <option value="30">30 - Northern Irish</option>
+                <option value="31">31 - British</option>
+                <option value="32">32 - Gypsy / Traveller</option>
+                <option value="33">33 - Polish</option>
+                <option value="14">14 - Any other white background</option>
+                <option value="15">15 - Any mixed background</option>
+                <option value="16">16 - Indian, Indian Scottish or Indian British</option>
+                <option value="17">17 - Pakistani, Pakistani Scottish or Pakistani British</option>
+                <option value="18">18 - Bangladeshi, Bangladeshi Scottish or Bangladeshi British </option>
+                <option value="19">19 - Chinese, Chinese Scottish or Chinese British</option>
+                <option value="20">20 - Any other Asian background</option>
+                <option value="21">21 - Caribbean, Caribbean Scottish or Caribbean British</option>
+                <option value="22">22 - African, African Scottish or African British</option>
+                <option value="23">23 - Other African background</option>
+                <option value="24">24 - Any other background</option>
+                <option value="34">34 - Arab, Arab Scottish or Arab British</option>
+                <option value="35">35 - Black, Black Scottish or Black British</option>
+                <option value="36">36 - Other Caribbean or black background</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="formMaritalStatus">Marital status</label>
+              <select name="formMaritalStatus">
+                <option selected="selected" value=""></option>
+                <option value="1">1-Married</option>
+                <option value="2">2-In a same-sex civil partnership</option>
+                <option value="3">3-Other</option>
+              </select>
+            </div>
+
+            <div><button class="btnFormSave">Save</button></div>
+
+          </form>
+
+        </ul>
+      </dd>
+    </div>
+
+    <div>
+      <dt class="dropdownMenuItemTitle">
+        <div class="titleSpanDiv">
+          <p><img src="images/menuIcon.svg" alt=""><span class="material-symbols-outlined">
+            card_membership
+            </span>Qualification</p>
+
+          <div class="dropdownMenuProgressBar">
+            <div class="dropdownMenuProgressBarColor" style="width: 0%; border: none;">
+              0%
+            </div>
+          </div>
+
+        </div>
+      </dt>
+      <dd class="dropdownMenuItemData hide">
+        <ul class="dropdownSubmenu">
+
+          <form action="">
+
+            <p>
+              Entry requirements:<br>(One of the following)<br><br>
+              
+
+              - One Higher at Grade C or above and National 5 qualifications or equivalent in Mathematics<br>
+              - A NQ SCQF level 6 qualification on a computing related course<br>
+              - Previous employment, practical experience and an enthusiasm for the subject may be considered in place of formal entry requirements<br><br>
+              Please note: entry is also subject to a satisfactory interview, and an academic reference may be requested
+            </p><br><br>
+
+            <div>
+              <label for="formRequirements">Requirements</label>
+              <select name="formRequirements">
+                <option selected="selected" value=""></option>
+                <option value="">I meet those requirements</option>
+                <option value="">I do not meet those requirements</option>
+                <option value="">I'm waiting for my results</option>
+                <option value="">Usure</option>
+              </select>
+            </div>
+
+            <div><button class="btnFormSave">Save</button></div>
+
+          </form>
+
+        </ul>
+      </dd>
+    </div>
+
+
+<!--     <div>
+      <dt class="dropdownMenuItemTitle">
+        <div class="titleSpanDiv">
+          <p><img src="images/menuIcon.svg" alt="" style="rotate: -90deg;"><span
+              class="material-icons">summarize</span>Summary</p>
+      </dt>
+    </div>
+    <dd class="dropdownMenuItemData hide">
+      <ul class="dropdownSubmenu">
+
+      </ul>
+    </dd>
+    </div> -->
+
+
+  </dl>
+
+  <div class="formPhotoBox">
+    <div></div>
+  </div>
+
+  <div class="backToTopBtn">
+    <img src="images/menuIcon.svg" alt="">
+  </div>
+
+  
+
+  <footer>
+    <div class="footerLogo"><img src="images/logo.png" alt=""></div>
+
+    <div class="footerSlogan">
+      <h3>We believe in the power of education. We believe in our students. We believe in our region. </h3>
+    </div>
+
+    <nav class="navFooter">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work For Us</a></li>
+        <li><a href="#">Legal Information</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="landing-page.html">Cookie Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="footerParahraph">
+      <p>New College Lanarkshire 2021. Charity Number SC021206</p>
+    </div>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
