@@ -48,6 +48,7 @@ $doneJourney:rgba(4, 52, 53, 0.2);
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  touch-action: manipulation;
 }
 
 .logoMobile {
@@ -67,7 +68,6 @@ body {
 
   img {
     filter: invert(33%) sepia(57%) saturate(6837%) hue-rotate(349deg) brightness(93%) contrast(83%);
-    /* rotate: 180deg; */
     transform: rotate(180deg);
     width: 40px;
   }
@@ -187,6 +187,7 @@ nav {
   padding: 1rem;
   margin-top: 12px;
   cursor: pointer;
+  pointer-events: all;
 }
 
 .dropdownMenuItemTitle:hover {
@@ -242,8 +243,6 @@ nav {
   border-radius: 3.5px;
   border-right: 1px solid $fontDark;
 }
-
-
 
 .flipArrow {
   img {
@@ -320,15 +319,29 @@ form {
   width: 300px;
   transform: translate(420px, -20px);
   display: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .formInfoBoxCloseBtn {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   text-align: end;
+  transform: translate(10px, -5px);
 
   span {
     font-size: 25px;
   }
+}
+
+.formRequirementsParagraph {
+  width: 70%;
+}
+
+.formRequirementsAcknowledgementBox {
+  border: 1px solid $fontDark;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
 }
 
 /* ---------------- LANDING PAGE CSS ---------------- */
@@ -549,6 +562,10 @@ form {
       margin-right: 10px;
     }
   }
+
+  .formInfoBox {
+    transform: translate(20px, 20px);
+  }
 }
 
 
@@ -660,6 +677,13 @@ form {
     }
   }
 
+  .backToTopBtn {
+
+    img {
+      width: 30px;
+    }
+  }
+
   /* ---------------- LANDING PAGE ---------------- */
 
   // .Top-section {
@@ -681,10 +705,6 @@ form {
     img {
       width: 250px;
     }
-  }
-
-  .dropdownMenu {
-    margin-top: 0px;
   }
 
   /* ---------------- LANDING PAGE ---------------- */
@@ -752,6 +772,10 @@ form {
   .dropdownMenuProgressBar {
     width: 100%;
     margin-top: 15px;
+  }
+
+  .formRequirementsParagraph {
+    width: 90%;
   }
 
   /* ---------------- LANDING PAGE ---------------- */

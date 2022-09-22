@@ -54,16 +54,15 @@ document.getElementById('closeAllBtn').addEventListener('click', () => {
 const allIcons = document.querySelectorAll('.formInfoIcon');
 
 allIcons.forEach(icon => {
-    icon.addEventListener('click', (e) => {
+  icon.addEventListener('click', (e) => {
 
-        const infoPopUp = e.target.nextElementSibling;
+    e.target.nextElementSibling.style.display = "flex";
 
-        infoPopUp.style.display = "flex";
-    });
+  });
 });
 
 allInfoBoxes.forEach(infoBox => {
-    infoBox.addEventListener('click', () => {
-        infoBox.style.display = "none";
-    });
+  infoBox.addEventListener('click', () => {
+    infoBox.style.display = "none";
+  });
 });
