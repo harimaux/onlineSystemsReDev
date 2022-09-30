@@ -228,20 +228,16 @@ nav {
 
 .dropdownMenuProgressBar {
   width: 200px;
-  background-color: $backGroundLight;
+  /* background-image: linear-gradient(rgb(252, 252, 252), orange); */
+  background-color: $fontLight;
   border-radius: 5px;
   border: 1px solid $fontDark;
   text-align: center;
   color: $fontDarker;
 }
 
-.dropdownMenuProgressBarColor {
-  height: 100%;
-  /* background-image: linear-gradient( rgb(252, 252, 252), rgb(27, 194, 21)); */
-  /* background-image: linear-gradient(rgb(252, 252, 252), rgb(59, 168, 55)); */
+.dropdownMenuProgressBarComplited {
   background-image: linear-gradient(rgb(252, 252, 252), green);
-  border-radius: 3.5px;
-  border-right: 1px solid $fontDark;
 }
 
 .flipArrow {

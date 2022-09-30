@@ -64,85 +64,83 @@
 
 
 
-      <dt class="dropdownMenuItemTitle">
-        <div class="titleSpanDiv">
-          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">account_circle</span>Your details</p>
+    <dt class="dropdownMenuItemTitle">
+      <div class="titleSpanDiv">
+        <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">account_circle</span>Your details</p>
 
-          <div class="dropdownMenuProgressBar">
-            <div class="dropdownMenuProgressBarColor" style="width: 80%">
-              80%
-            </div>
+        <div class="dropdownMenuProgressBar dropdownMenuProgressBarComplited">
+          <p>Completed</p>
+        </div>
+
+
+      </div>
+    </dt>
+    <dd class="dropdownMenuItemData hide">
+      <ul class="dropdownSubmenu">
+        <form action="">
+
+          <div>
+            <label for="formSurename">Surname&#42</label>
+            <input type="text" name="formSurename">
           </div>
 
+          <div>
+            <label for="formForename">Forename&#42</label>
+            <input type="text" name="formForename">
+          </div>
 
-        </div>
-      </dt>
-      <dd class="dropdownMenuItemData hide">
-        <ul class="dropdownSubmenu">
-          <form action="">
+          <div>
+            <label for="formDate">Date of birth&#42</label>
+            <input class="formDate" type="date" name="formDate">
+          </div>
 
-            <div>
-              <label for="formSurename">Surname&#42</label>
-              <input type="text" name="formSurename">
-            </div>
+          <div>
+            <label for="formHomePostCode">Home post code&#42</label>
+            <input type="text" name="formHomePostCode">
+          </div>
 
-            <div>
-              <label for="formForename">Forename&#42</label>
-              <input type="text" name="formForename">
-            </div>
+          <div><button id="btnFormFindPostCode">Find My Address</button></div>
 
-            <div>
-              <label for="formDate">Date of birth&#42</label>
-              <input class="formDate" type="date" name="formDate">
-            </div>
+          <div>
+            <label for="formHomeAddress">Home address&#42
+              <span class="material-symbols-outlined formInfoIcon">live_help</span>
 
-            <div>
-              <label for="formHomePostCode">Home post code&#42</label>
-              <input type="text" name="formHomePostCode">
-            </div>
+              <div class="formInfoBox">
+                <span class="formInfoBoxCloseBtn">
+                  <span class="material-symbols-outlined">cancel</span>
+                </span>
 
-            <div><button id="btnFormFindPostCode">Find My Address</button></div>
-
-            <div>
-              <label for="formHomeAddress">Home address&#42
-                <span class="material-symbols-outlined formInfoIcon">live_help</span>
-
-                <div class="formInfoBox">
-                  <span class="formInfoBoxCloseBtn">
-                    <span class="material-symbols-outlined">cancel</span>
-                  </span>
-
-                  Please only enter your address manually if the postcode lookup cannot find your
-                  address.</div>
-              </label>
-              <textarea name="formHomeAddress" cols="30" rows="10" placeholder="Please enter your address on multiple lines, e.g.:
+                Please only enter your address manually if the postcode lookup cannot find your
+                address.</div>
+            </label>
+            <textarea name="formHomeAddress" cols="30" rows="10" placeholder="Please enter your address on multiple lines, e.g.:
 
               12 Main Street
               Glenboig
               North Lanarkshire"></textarea>
 
-            </div>
+          </div>
 
-            <div>
-              <label for="formHomeTelephone">Home telephone</label>
-              <input type="text" name="formHomeTelephone">
-            </div>
+          <div>
+            <label for="formHomeTelephone">Home telephone</label>
+            <input type="text" name="formHomeTelephone">
+          </div>
 
-            <div>
-              <label for="formMobileTelephone">Mobile telephone</label>
-              <input type="text" name="formMobileTelephone">
-            </div>
+          <div>
+            <label for="formMobileTelephone">Mobile telephone</label>
+            <input type="text" name="formMobileTelephone">
+          </div>
 
-            <div>
-              <label for="formEmail">Email</label>
-              <input type="text" name="formEmail">
-            </div>
+          <div>
+            <label for="formEmail">Email</label>
+            <input type="text" name="formEmail">
+          </div>
 
-            <div><button class="btnFormSave">Save</button></div>
+          <div><button class="btnFormSave">Save</button></div>
 
-          </form>
-        </ul>
-      </dd>
+        </form>
+      </ul>
+    </dd>
 
 
 
@@ -158,9 +156,7 @@
             </span>Emergency contact</p>
 
           <div class="dropdownMenuProgressBar">
-            <div class="dropdownMenuProgressBarColor" style="width: 100%">
-              Completed
-            </div>
+            <p>Uncompleted</p>
           </div>
 
       </dt>
@@ -213,9 +209,7 @@
             </span>Education, Assistance and Care</p>
 
           <div class="dropdownMenuProgressBar">
-            <div class="dropdownMenuProgressBarColor" style="width: 20%">
-              20%
-            </div>
+            <p>Uncompleted</p>
           </div>
         </div>
       </dt>
@@ -1217,9 +1211,7 @@
               health_and_safety
             </span>Disabilities</p>
           <div class="dropdownMenuProgressBar">
-            <div class="dropdownMenuProgressBarColor" style="width: 50%">
-              50%
-            </div>
+            <p>Uncompleted</p>
           </div>
         </div>
       </dt>
@@ -1325,9 +1317,7 @@
             </span>Equality and Diversity</p>
 
           <div class="dropdownMenuProgressBar">
-            <div class="dropdownMenuProgressBarColor" style="width: 0%; border: none;">
-              0%
-            </div>
+            <p>Uncompleted</p>
           </div>
 
         </div>
@@ -1475,9 +1465,7 @@
             </span>Qualification</p>
 
           <div class="dropdownMenuProgressBar">
-            <div class="dropdownMenuProgressBarColor" style="width: 0%; border: none;">
-              0%
-            </div>
+            <p>Uncompleted</p>
           </div>
 
         </div>
@@ -1535,14 +1523,11 @@
     <div>
       <dt class="dropdownMenuItemTitle">
         <div class="titleSpanDiv">
-          <p><img src="images/menuIcon.svg" alt=""><span
-            class="material-icons">summarize</span>Summary</p>
+          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">summarize</span>Summary</p>
 
-          <div class="dropdownMenuProgressBar">
-            <div class="dropdownMenuProgressBarColor" style="width: 0%; border: none;">
-              0%
-            </div>
-          </div>
+<!--           <div class="dropdownMenuProgressBar">
+            <p>Uncompleted</p>
+          </div> -->
 
         </div>
       </dt>
@@ -1558,7 +1543,7 @@
         </ul>
       </dd>
     </div>
-    
+
 
 
 
