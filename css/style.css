@@ -296,14 +296,14 @@ form .formDisabilityBox {
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 80%;
+  width: 95%;
 }
 
 .statusbox,
 .notifications {
   margin-top: 1%;
   margin-bottom: 2rem;
-  width: 80%;
+  width: 90%;
   text-align: center;
   background-color: #db2f2f;
   border-radius: 10px;
@@ -357,7 +357,7 @@ form .formDisabilityBox {
 
 .journeyTitle {
   text-align: center;
-  width: 80%;
+  width: 95%;
   background-color: rgba(0, 0, 0, 0.7);
   margin: 0 auto;
   max-width: 100%;
@@ -387,16 +387,22 @@ form .formDisabilityBox {
 }
 
 .header-item,
-.header-item1,
-.header-item2,
-#header-container-done {
+.header-item1 {
   font-size: 1.5rem;
+}
+
+.header-item2 {
+  font-size: inherit;
+}
+
+.header-item p {
+  padding-left: 30%;
 }
 
 #header-container,
 #header-container-done,
 #header-container-active {
-  width: 80%;
+  width: 95%;
   display: flex;
   margin-bottom: 2rem;
   padding: 1%;
@@ -584,6 +590,9 @@ select.formApplication {
 .journeyTitle {
     font-size: inherit;
   }
+  .header-item2 {
+    font-size: inherit;
+  }
 }
 @media screen and (max-width: 940px) {
   /* ---------------- FORM PAGE ---------------- */
@@ -605,13 +614,15 @@ select.formApplication {
 .notifications,
 #header-container-done,
 .journeyTitle,
-.header-item,
-.header-item1,
 .header-item2 {
     font-size: inherit;
   }
   select.formApplication {
     width: auto;
+  }
+  .notifications,
+.statusbox {
+    width: 95%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -655,12 +666,13 @@ form select {
 .notifications,
 #header-container-done,
 .journeyTitle,
-.header-item,
-.header-item1,
 .header-item2 {
     font-size: inherit;
   }
   .wrapper {
     width: 100%;
+  }
+  .header-item p {
+    padding-left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
