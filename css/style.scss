@@ -188,6 +188,23 @@ nav {
   margin-top: 12px;
   cursor: pointer;
   pointer-events: all;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 20px;
+    margin-right: 1rem;
+    transform: translate(0px, 5px);
+    transition: .3s ease-in-out;
+    pointer-events: none;
+    touch-action: none;
+  }
+
+  span,
+  p {
+    pointer-events: none;
+    touch-action: none;
+  }
 }
 
 .dropdownMenuItemTitle:hover {
@@ -207,23 +224,6 @@ nav {
 
 .dropdownMenuItemData.show {
   height: var(--openHeight);
-}
-
-.titleSpan2mark {
-  color: $warningGreen;
-}
-
-.titleSpanDiv {
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-
-  img {
-    width: 20px;
-    margin-right: 1rem;
-    transform: translate(0px, 5px);
-    transition: .3s ease-in-out;
-  }
 }
 
 .dropdownMenuProgressBar {
@@ -761,8 +761,8 @@ form {
     }
   }
 
-  .titleSpanDiv {
-    display: unset;
+  .dropdownMenuItemTitle {
+    flex-direction: column;
   }
 
   .dropdownMenuProgressBar {

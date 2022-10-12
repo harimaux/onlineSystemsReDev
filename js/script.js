@@ -24,16 +24,27 @@ backToTopBtn.addEventListener('click', () => {
   });
 });
 
-
 //All form info boxes
 const allInfoBoxes = document.querySelectorAll('.formInfoBox');
 
 //Dropdown menu
 
+/* const titleSpanDiv = document.querySelectorAll('.titleSpanDiv');
+
+titleSpanDiv.forEach(allChildDivs => {
+  allChildDivs.addEventListener('click', (e) => {
+
+    console.log(e.parentElement)
+  })
+}) */
+
+
 const dropdownMenuItemTitles = document.querySelectorAll('.dropdownMenuItemTitle');
 
 dropdownMenuItemTitles.forEach(menuItemTitle => {
+
   menuItemTitle.addEventListener('click', (e) => {
+
 
     const menuItemData = e.target.nextElementSibling;
 
