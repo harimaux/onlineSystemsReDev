@@ -144,6 +144,21 @@ nav a {
   margin-top: 12px;
   cursor: pointer;
   pointer-events: all;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdownMenuItemTitle img {
+  width: 20px;
+  margin-right: 1rem;
+  transform: translate(0px, 5px);
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+  touch-action: none;
+}
+.dropdownMenuItemTitle span,
+.dropdownMenuItemTitle p {
+  pointer-events: none;
+  touch-action: none;
 }
 
 .dropdownMenuItemTitle:hover {
@@ -167,18 +182,6 @@ nav a {
 
 .titleSpan2mark {
   color: rgb(76, 168, 33);
-}
-
-.titleSpanDiv {
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-}
-.titleSpanDiv img {
-  width: 20px;
-  margin-right: 1rem;
-  transform: translate(0px, 5px);
-  transition: 0.3s ease-in-out;
 }
 
 .dropdownMenuProgressBar {
@@ -640,8 +643,8 @@ form select {
     margin-bottom: 1.5rem;
     width: auto;
   }
-  .titleSpanDiv {
-    display: unset;
+  .dropdownMenuItemTitle {
+    flex-direction: column;
   }
   .dropdownMenuProgressBar {
     width: 100%;

@@ -64,18 +64,17 @@
 
 
 
-    
+
     <dt class="dropdownMenuItemTitle">
-      <div class="titleSpanDiv">
-        <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">account_circle</span>Your details</p>
 
-        <div class="dropdownMenuProgressBar dropdownMenuProgressBarComplited">
-          <p>Completed</p>
-        </div>
+      <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">account_circle</span>Your details</p>
 
+      <span class="dropdownMenuProgressBar dropdownMenuProgressBarComplited">
+        <p>Completed</p>
+      </span>
 
-      </div>
     </dt>
+
     <dd class="dropdownMenuItemData hide">
       <ul class="dropdownSubmenu">
         <form action="">
@@ -149,52 +148,51 @@
 
 
 
-    <div>
-      <dt class="dropdownMenuItemTitle">
-        <div class="titleSpanDiv">
-          <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
-              contact_emergency
-            </span>Emergency contact</p>
+    <dt class="dropdownMenuItemTitle">
 
-          <div class="dropdownMenuProgressBar">
-            <p>Uncompleted</p>
+      <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
+          contact_emergency
+        </span>Emergency contact</p>
+
+      <span class="dropdownMenuProgressBar">
+        <p>Uncompleted</p>
+      </span>
+
+    </dt>
+
+    <dd class="dropdownMenuItemData hide">
+      <ul class="dropdownSubmenu">
+
+        <form action="">
+          <div>
+            <label for="formEmergencyContactName">Full name of emergency contact</label>
+            <input type="text" name="formEmergencyContactName">
           </div>
 
-      </dt>
-      <dd class="dropdownMenuItemData hide">
-        <ul class="dropdownSubmenu">
+          <div>
+            <label for="formEmergencyContactRelation">Relationship to you</label>
+            <select name="formEmergencyContactRelation">
+              <option selected="selected" value=""></option>
+              <option value="">Mother</option>
+              <option value="">Father</option>
+              <option value="">Guardian</option>
+              <option value="">Spouse/Partner</option>
+              <option value="">Child</option>
+              <option value="">Other</option>
+            </select>
+          </div>
 
-          <form action="">
-            <div>
-              <label for="formEmergencyContactName">Full name of emergency contact</label>
-              <input type="text" name="formEmergencyContactName">
-            </div>
+          <div>
+            <label for="formEmergencyContactPhone">Emergency contact phone number</label>
+            <input type="text" name="formEmergencyContactPhone">
+          </div>
 
-            <div>
-              <label for="formEmergencyContactRelation">Relationship to you</label>
-              <select name="formEmergencyContactRelation">
-                <option selected="selected" value=""></option>
-                <option value="">Mother</option>
-                <option value="">Father</option>
-                <option value="">Guardian</option>
-                <option value="">Spouse/Partner</option>
-                <option value="">Child</option>
-                <option value="">Other</option>
-              </select>
-            </div>
+          <div><button class="btnFormSave">Save</button></div>
 
-            <div>
-              <label for="formEmergencyContactPhone">Emergency contact phone number</label>
-              <input type="text" name="formEmergencyContactPhone">
-            </div>
+        </form>
 
-            <div><button class="btnFormSave">Save</button></div>
-
-          </form>
-
-        </ul>
-      </dd>
-    </div>
+      </ul>
+    </dd>
 
 
 
@@ -202,18 +200,18 @@
 
 
 
-    <div>
       <dt class="dropdownMenuItemTitle">
-        <div class="titleSpanDiv">
+
           <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
               school
             </span>Education, Assistance and Care</p>
 
-          <div class="dropdownMenuProgressBar">
+          <span class="dropdownMenuProgressBar">
             <p>Uncompleted</p>
-          </div>
-        </div>
+          </span>
+
       </dt>
+
       <dd class="dropdownMenuItemData hide">
         <ul class="dropdownSubmenu">
 
@@ -1197,7 +1195,7 @@
 
         </ul>
       </dd>
-    </div>
+
 
 
 
@@ -1205,17 +1203,17 @@
 
 
 
-    <div>
       <dt class="dropdownMenuItemTitle">
-        <div class="titleSpanDiv">
+
           <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
               health_and_safety
             </span>Disabilities</p>
-          <div class="dropdownMenuProgressBar">
+          <span class="dropdownMenuProgressBar">
             <p>Uncompleted</p>
-          </div>
-        </div>
+          </span>
+
       </dt>
+
       <dd class="dropdownMenuItemData hide">
         <ul class="dropdownSubmenu">
 
@@ -1301,7 +1299,6 @@
           </form>
         </ul>
       </dd>
-    </div>
 
 
 
@@ -1310,19 +1307,19 @@
 
 
 
-    <div>
+
       <dt class="dropdownMenuItemTitle">
-        <div class="titleSpanDiv">
+
           <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">
               diversity_3
             </span>Equality and Diversity</p>
 
-          <div class="dropdownMenuProgressBar">
+          <span class="dropdownMenuProgressBar">
             <p>Uncompleted</p>
-          </div>
+          </span>
 
-        </div>
       </dt>
+
       <dd class="dropdownMenuItemData hide">
         <ul class="dropdownSubmenu">
 
@@ -1449,7 +1446,7 @@
 
         </ul>
       </dd>
-    </div>
+
 
 
 
@@ -1457,20 +1454,18 @@
 
 
 
-
-    <div>
       <dt class="dropdownMenuItemTitle">
-        <div class="titleSpanDiv">
+
           <p><img src="images/menuIcon.svg" alt=""><span class="material-symbols-outlined">
               card_membership
             </span>Qualification</p>
 
-          <div class="dropdownMenuProgressBar">
+          <span class="dropdownMenuProgressBar">
             <p>Uncompleted</p>
-          </div>
+          </span>
 
-        </div>
       </dt>
+
       <dd class="dropdownMenuItemData hide">
         <ul class="dropdownSubmenu">
 
@@ -1509,9 +1504,6 @@
 
         </ul>
       </dd>
-    </div>
-
-
 
 
 
@@ -1520,18 +1512,17 @@
 
 
 
-
-    <div>
       <dt class="dropdownMenuItemTitle">
-        <div class="titleSpanDiv">
+
           <p><img src="images/menuIcon.svg" alt=""><span class="material-icons">summarize</span>Summary</p>
 
-<!--           <div class="dropdownMenuProgressBar">
+          <!--           <div class="dropdownMenuProgressBar">
             <p>Uncompleted</p>
           </div> -->
 
-        </div>
+
       </dt>
+
       <dd class="dropdownMenuItemData hide">
         <ul class="dropdownSubmenu">
 
@@ -1543,10 +1534,6 @@
 
         </ul>
       </dd>
-    </div>
-
-
-
 
 
   </dl>
