@@ -19,14 +19,14 @@ $warningOrange: rgb(226, 105, 5);
 $warningGreen: rgb(76, 168, 33);
 $uglyGreen: rgba(4, 52, 53, 0.4);
 
-$NCLred: #DB2F2F;
+$NCLred: #db2f2f;
 $NCLred80: rgb(218, 47, 47, 0.8);
 $NCLlucas: rgba(72, 255, 0, 0.8);
 
 // Landing page colours
 $todoJourney: rgba(4, 52, 53, 0.4);
-$activeJourney: #DB2F2F;
-$doneJourney:rgba(4, 52, 53, 0.2);
+$activeJourney: #db2f2f;
+$doneJourney: rgba(4, 52, 53, 0.2);
 
 //GOOGLE ICONS
 
@@ -56,18 +56,18 @@ body {
 }
 
 .backToTopBtn {
-
   position: fixed;
   right: 2rem;
   bottom: 3rem;
   background-color: rgba(0, 0, 0, 0.226);
-  padding: .3rem;
+  padding: 0.3rem;
   border-radius: 5px;
   cursor: pointer;
   z-index: 1;
 
   img {
-    filter: invert(33%) sepia(57%) saturate(6837%) hue-rotate(349deg) brightness(93%) contrast(83%);
+    filter: invert(33%) sepia(57%) saturate(6837%) hue-rotate(349deg)
+      brightness(93%) contrast(83%);
     transform: rotate(180deg);
     width: 40px;
   }
@@ -215,7 +215,7 @@ nav {
 .dropdownMenuItemData {
   margin: 0;
   overflow: hidden;
-  transition: height .6s ease-out;
+  transition: height 0.6s ease-out;
 }
 
 .dropdownMenuItemData.hide {
@@ -250,7 +250,6 @@ nav {
 /* --------------- FORMS --------------- */
 
 form {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,7 +264,7 @@ form {
 
   img {
     width: 20px;
-    opacity: .7;
+    opacity: 0.7;
     transform: translate(0, -20px);
     cursor: pointer;
   }
@@ -279,7 +278,7 @@ form {
   input,
   textarea,
   select {
-    padding: .5rem;
+    padding: 0.5rem;
     margin-bottom: 1.5rem;
     width: 400px;
     outline-color: #35791a;
@@ -309,7 +308,7 @@ form {
   font-size: 15px;
   border: 1px solid $fontDark;
   border-radius: 5px;
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: $backGroundYellow;
   position: absolute;
   width: 300px;
@@ -320,7 +319,7 @@ form {
 }
 
 .formInfoBoxCloseBtn {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   text-align: end;
   transform: translate(10px, -5px);
 
@@ -342,23 +341,26 @@ form {
 
 /* ---------------- LANDING PAGE CSS ---------------- */
 
+.space {
+  padding: 0.5%;
+}
+
 .Top-section {
   // border: orangered 2px solid;
   display: flex;
-  max-width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto;
+  width: 95%;
 }
 
-.statusbox {
+.statusbox,
+.notifications {
   // border: orangered 2px solid;
-  margin-right: 10px;
   margin-top: 1%;
   margin-bottom: 2rem;
-  width: 40%;
+  width: 90%;
   text-align: center;
-  padding: 1%;
   background-color: $activeJourney;
   border-radius: 10px;
   // SHADOWS
@@ -370,37 +372,17 @@ form {
   h1 {
     font-size: 45px;
     padding: 2%;
-    // margin: auto;
     color: white;
   }
 
   h2 {
     font-size: 35px;
     padding: 2%;
+    color: rgb(46, 44, 44);
   }
 }
 
 .notifications {
-  // border: orangered 2px solid;
-  width: 40%;
-  margin-top: 1%;
-  margin-bottom: 2rem;
-  text-align: center;
-  padding: 1%;
-  background-color: $activeJourney;
-  border-radius: 10px;
-
-  // SHADOWS
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-
-  h1 {
-    font-size: 45px;
-    padding: 3%;
-    color: white;
-  }
-
   h2 {
     font-size: 85px;
     padding: 3%;
@@ -415,7 +397,7 @@ form {
 
   a {
     text-decoration: none;
-    color: #000000;
+    color: rgb(46, 44, 44);
   }
 }
 
@@ -439,7 +421,7 @@ form {
 
 .journeyTitle {
   text-align: center;
-  width: 80%;
+  width: 95%;
   background-color: rgb(0, 0, 0, 0.7);
   margin: 0 auto;
   // border: 1px solid red;
@@ -447,7 +429,7 @@ form {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 2%;
   margin-bottom: 2rem;
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
@@ -469,13 +451,26 @@ form {
 .header-item,
 .header-item1,
 .header-item2 {
-  color: black;
-  text-align: center;
-  // font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+.header-item,
+.header-item1 {
+  font-size: 1.5rem;
+  // border: 1px solid red;
 }
 
-#header-container,#header-container-done {
-  width: 80%;
+.header-item2 {
+  font-size: inherit;
+}
+
+.header-item p {
+  padding-left: 30%;
+}
+
+#header-container,
+#header-container-done,
+#header-container-active {
+  width: 95%;
   display: flex;
   margin-bottom: 2rem;
   padding: 1%;
@@ -490,56 +485,51 @@ form {
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-#header-container-done{
-  opacity: 30%;
-//   display: none;
-// visibility: hidden;
+#header-container-done {
+  opacity: 25%;
+}
+#header-container-active .header-item,
+#header-container-active .header-item1,
+#header-container-active .header-item2 {
+  color: white;
 }
 
 #header-container-active {
-  width: 80%;
-  display: flex;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding: 1%;
   background-color: $activeJourney;
-  border-radius: 10px;
   border: black 3px solid;
-  margin-left: auto;
-  margin-right: auto;
-  // SHADOWS
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .header-item {
-  border-radius: 50%;
   flex: 1;
-  // background-color: blueviolet;
   align-self: center;
-  font-size: 4rem;
 }
 
 .header-item1 {
   align-self: center;
   flex: 2;
-  font-size: 3rem;
-  // background-color: crimson;
 }
 
 .header-item2 {
   flex: 3;
-  font-size: 1.5rem;
   padding: 8px 35px;
   align-self: center;
-  // background-color: darkcyan;
+}
+
+select.formApplication {
+  background-color: rgb(95, 95, 95);
+  color: #fff;
+  padding: 0.4%;
+  font-size: 25px;
+  width: auto;
+  border-radius: 5px;
+}
+select.formApplication {
+  outline: none;
 }
 
 /* ---------------- MEDIA ---------------- */
 
 @media screen and (max-width: 1288px) {
-
   /* ---------------- FORM PAGE ---------------- */
 
   .dropdownMenu {
@@ -549,10 +539,13 @@ form {
   .formHeading {
     width: 95%;
   }
+
+  select.formApplication {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 1180px) {
-
   nav {
     ul {
       margin-right: 10px;
@@ -562,11 +555,29 @@ form {
   .formInfoBox {
     transform: translate(20px, 20px);
   }
+
+  select.formApplication {
+    width: auto;
+  }
+
+  .Top-section h1,
+  .journeyTitle h1 {
+    font-size: 2rem;
+  }
+  .Top-section h2,
+  .Top-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .statusbox,
+  .notifications,
+  #header-container-done,
+  .journeyTitle {
+    font-size: inherit;
+  }
 }
 
-
 @media screen and (max-width: 1030px) {
-
   /* ---------------- FORM PAGE ---------------- */
 
   .logoMobile {
@@ -604,7 +615,7 @@ form {
     display: block;
     width: 100%;
     background-color: $backGroundDark;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     position: fixed;
     top: 0;
     transform: translateY(-100%);
@@ -647,9 +658,7 @@ form {
   }
 
   footer {
-
     .navFooter {
-
       margin-right: 0rem;
       justify-content: flex-start;
 
@@ -674,7 +683,6 @@ form {
   }
 
   .backToTopBtn {
-
     img {
       width: 30px;
     }
@@ -682,13 +690,24 @@ form {
 
   /* ---------------- LANDING PAGE ---------------- */
 
-  // .Top-section {
-  //   flex-direction: column;
-  // }
+  select.formApplication {
+    width: auto;
+  }
+
+  .statusbox,
+  .notifications,
+  #header-container-done,
+  .journeyTitle {
+    font-size: inherit;
+  }
+
+  .header-item2 {
+    font-size: inherit;
+    // font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 940px) {
-
   /* ---------------- FORM PAGE ---------------- */
 
   .backGroundMain {
@@ -696,7 +715,7 @@ form {
   }
 
   .logo {
-    padding: .5rem;
+    padding: 0.5rem;
 
     img {
       width: 250px;
@@ -707,34 +726,30 @@ form {
 
   .Top-section {
     flex-direction: column;
+    width: 100%;
   }
 
+  .statusbox,
+  .notifications,
+  #header-container-done,
+  .journeyTitle,
+  // .header-item,
+  // .header-item1,
+  .header-item2 {
+    font-size: inherit;
+  }
+
+  select.formApplication {
+    width: auto;
+  }
+
+  .notifications,
   .statusbox {
-    width: 90%;
-    font-size: inherit;
-  }
-
-  .notifications {
-    width: 90%;
-    font-size: inherit;
-  }
-
-  #header-container-done {
-    width: 90%;
-  }
-
-  #header-container-active {
-    width: 90%;
-  }
-
-  .journeyTitle {
-    width: 90%;
-    font-size: 1.7rem;
+    width: 95%;
   }
 }
 
 @media screen and (max-width: 800px) {
-
   /* ---------------- FORM PAGE ---------------- */
 
   .logo {
@@ -744,7 +759,6 @@ form {
   }
 
   form {
-
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -755,7 +769,7 @@ form {
     input,
     textarea,
     select {
-      padding: .4rem;
+      padding: 0.4rem;
       margin-bottom: 1.5rem;
       width: auto;
     }
@@ -775,41 +789,28 @@ form {
   }
 
   /* ---------------- LANDING PAGE ---------------- */
+  select.formApplication {
+    width: auto;
+    max-width: 90%;
+  }
 
   .Top-section {
     flex-direction: column;
   }
 
-  .statusbox {
-    width: 90%;
-    font-size: inherit;
-  }
-
-  .notifications {
-    width: 90%;
-    font-size: inherit;
-  }
-
-  .wrapper {
-    width: 100%;
-  }
-
-  .header-item,
-  .header-item1,
+  .statusbox,
+  .notifications,
+  #header-container-done,
+  .journeyTitle,
+  // .header-item,
+  // .header-item1,
   .header-item2 {
     font-size: inherit;
   }
-
-  #header-container {
-    width: 90%;
+  .wrapper {
+    width: 100%;
   }
-
-  #header-container-active {
-    width: 90%;
-  }
-
-  .journeyTitle {
-    width: 90%;
-    font-size: inherit;
+  .header-item p {
+    padding-left: 20%;
   }
 }
