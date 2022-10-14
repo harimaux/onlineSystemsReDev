@@ -180,10 +180,6 @@ nav a {
   height: var(--openHeight);
 }
 
-.titleSpan2mark {
-  color: rgb(76, 168, 33);
-}
-
 .dropdownMenuProgressBar {
   width: 200px;
   /* background-image: linear-gradient(rgb(252, 252, 252), orange); */
